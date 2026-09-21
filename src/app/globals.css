@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/*
+ * Oddment — light, warm, editorial. Deliberately light-only: the brand is
+ * "good paper", and a dark theme would fight the whole art direction.
+ */
+@theme {
+  --color-paper: #f5f0e8;
+  --color-panel: #fbf8f2;
+  --color-ink: #2b2b2b;
+  --color-clay: #b5654a;
+  --color-sage: #8a9a7b;
+  --color-oxblood: #6b2737;
+
+  --color-rule: rgba(43, 43, 43, 0.14);
+  --color-rule-strong: rgba(43, 43, 43, 0.3);
+  --color-muted: rgba(43, 43, 43, 0.7);
+  --color-faint: rgba(43, 43, 43, 0.55);
+
+  --font-serif: var(--font-instrument-serif), Georgia, serif;
+  --font-sans: var(--font-karla), system-ui, sans-serif;
+  --font-hand: var(--font-caveat), cursive;
+
+  --radius-edge: 2px;
+
+  --animate-rise: rise 0.6s ease both;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* The striped kraft-paper fill standing in for photography until the
+   Pexels fetch script has run. */
+.od-placeholder {
+  background: repeating-linear-gradient(
+    135deg,
+    #ebe3d6 0 9px,
+    #f3ede3 9px 18px
+  );
+}
+
+.od-placeholder-deep {
+  background: repeating-linear-gradient(
+    135deg,
+    #e7dfd1 0 9px,
+    #f0eae0 9px 18px
+  );
+}
+
+.od-placeholder-map {
+  background: repeating-linear-gradient(
+    135deg,
+    #e3e7dc 0 10px,
+    #eef0e8 10px 20px
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
