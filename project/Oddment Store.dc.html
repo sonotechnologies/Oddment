@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin:0; padding:0; background:#F5F0E8; color:#2B2B2B; font-family:Karla, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+  * { box-sizing:border-box; }
+  a { color:#6B2737; text-decoration:none; }
+  a:hover { color:#B5654A; }
+  button { font-family:inherit; cursor:pointer; }
+  input, select { font-family:inherit; }
+  @keyframes od-rise { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:none; } }
+</style>
+</helmet>
+
+<div style="min-height:100vh; background:#F5F0E8; color:#2B2B2B; font-family:Karla, sans-serif; font-size:16px; line-height:1.6;">
+
+  <header style="position:sticky; top:0; z-index:40; background:rgba(245,240,232,0.94); backdrop-filter:blur(8px); border-bottom:1px solid rgba(43,43,43,0.12);">
+    <div style="max-width:1180px; margin:0 auto; padding:14px 22px; display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+      <button onClick="{{ goHome }}" style="background:none; border:none; padding:0; text-align:left; display:flex; flex-direction:column; line-height:1;">
+        <span style="font-family:'Instrument Serif', serif; font-size:30px; letter-spacing:0.01em; color:#2B2B2B;">Oddment</span>
+        <span style="font-size:10px; letter-spacing:0.22em; text-transform:uppercase; color:#8A9A7B; margin-top:5px;">Northern Quarter</span>
+      </button>
+      <nav style="display:flex; gap:22px; align-items:center; margin-left:auto; flex-wrap:wrap; font-size:14px; letter-spacing:0.02em;">
+        <button onClick="{{ goWomen }}" style="background:none; border:none; padding:0; color:#2B2B2B;">Women</button>
+        <button onClick="{{ goMen }}" style="background:none; border:none; padding:0; color:#2B2B2B;">Men</button>
+        <button onClick="{{ goAccessories }}" style="background:none; border:none; padding:0; color:#2B2B2B;">Accessories</button>
+        <button onClick="{{ goVisit }}" style="background:none; border:none; padding:0; color:#2B2B2B;">Visit</button>
+        <button onClick="{{ goAbout }}" style="background:none; border:none; padding:0; color:#2B2B2B;">About</button>
+        <button onClick="{{ goBag }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:999px; padding:8px 16px; font-size:13px; letter-spacing:0.04em;">Bag ({{ bagCount }})</button>
+      </nav>
+    </div>
+  </header>
+
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <main>
+    <sc-if value="{{ heroEditorial }}" hint-placeholder-val="{{ true }}">
+    <section style="max-width:1180px; margin:0 auto; padding:34px 22px 10px;">
+      <div style="display:grid; gap:26px; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); align-items:center;">
+        <div style="animation:od-rise 0.6s ease both;">
+          <p style="margin:0 0 14px; font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:#8A9A7B;">Autumn arrivals</p>
+          <h1 style="margin:0; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(40px, 7vw, 68px); line-height:1.04; letter-spacing:-0.01em;">Good things,<br><em style="font-style:italic;">oddly chosen</em></h1>
+          <svg viewBox="0 0 220 12" width="200" height="11" style="display:block; margin:14px 0 20px; overflow:visible;" aria-hidden="true"><path d="M2 8 C 60 1, 150 12, 218 4" fill="none" stroke="#B5654A" stroke-width="2.4" stroke-linecap="round"></path></svg>
+          <p style="margin:0 0 26px; max-width:40ch; font-size:17px; color:rgba(43,43,43,0.82);">A small shop on Weaver's Row with a big appetite for things made properly. Hand-picked menswear and womenswear, most of it in ones and twos.</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <button onClick="{{ goShop }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:15px 28px; font-size:14px; letter-spacing:0.06em; text-transform:uppercase;">Shop new in</button>
+            <button onClick="{{ goVisit }}" style="background:none; color:#2B2B2B; border:1px solid rgba(43,43,43,0.3); border-radius:2px; padding:15px 28px; font-size:14px; letter-spacing:0.06em; text-transform:uppercase;">Visit the shop</button>
+          </div>
+        </div>
+        <div style="position:relative;">
+          <div style="aspect-ratio:4/5; border:1px solid rgba(43,43,43,0.14); background:repeating-linear-gradient(135deg, #EBE3D6 0 9px, #F1EBE1 9px 18px); display:flex; align-items:flex-end; padding:16px;">
+            <span style="font-family:ui-monospace, monospace; font-size:11px; letter-spacing:0.05em; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:6px 9px;">lifestyle shot — model in overshirt, shop doorway</span>
+          </div>
+          <div style="position:absolute; bottom:-18px; left:-14px; width:44%; aspect-ratio:1; border:1px solid rgba(43,43,43,0.14); background:repeating-linear-gradient(135deg, #E6DDCE 0 9px, #EFE8DC 9px 18px); display:flex; align-items:flex-end; padding:12px;">
+            <span style="font-family:ui-monospace, monospace; font-size:10px; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:5px 7px;">shop interior detail</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    </sc-if>
+
+    <sc-if value="{{ heroFullBleed }}" hint-placeholder-val="{{ false }}">
+    <section style="padding:22px;">
+      <div style="position:relative; min-height:72vh; border:1px solid rgba(43,43,43,0.14); background:repeating-linear-gradient(135deg, #E9E1D3 0 10px, #F1EBE1 10px 20px); display:flex; align-items:flex-end;">
+        <span style="position:absolute; top:16px; right:16px; font-family:ui-monospace, monospace; font-size:11px; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:6px 9px;">full-bleed lifestyle shot — shopfront, warm daylight</span>
+        <div style="background:#F5F0E8; margin:0 0 0 0; padding:34px 38px; max-width:560px; animation:od-rise 0.6s ease both;">
+          <p style="margin:0 0 12px; font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:#8A9A7B;">12 Weaver's Row, Manchester</p>
+          <h1 style="margin:0; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(38px, 6vw, 60px); line-height:1.05;">Good things, <em style="font-style:italic;">oddly chosen</em></h1>
+          <svg viewBox="0 0 220 12" width="190" height="11" style="display:block; margin:12px 0 18px; overflow:visible;" aria-hidden="true"><path d="M2 8 C 60 1, 150 12, 218 4" fill="none" stroke="#B5654A" stroke-width="2.4" stroke-linecap="round"></path></svg>
+          <p style="margin:0 0 24px; font-size:17px; color:rgba(43,43,43,0.82);">Most of what we stock comes in ones and twos. Shop it online, or collect from the counter and say hello.</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <button onClick="{{ goShop }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:15px 28px; font-size:14px; letter-spacing:0.06em; text-transform:uppercase;">Shop new in</button>
+            <button onClick="{{ goVisit }}" style="background:none; color:#2B2B2B; border:1px solid rgba(43,43,43,0.3); border-radius:2px; padding:15px 28px; font-size:14px; letter-spacing:0.06em; text-transform:uppercase;">Visit the shop</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    </sc-if>
+
+    <section style="max-width:1180px; margin:0 auto; padding:56px 22px 0;">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:22px;">
+        <h2 style="margin:0; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(28px, 4vw, 38px);">New in</h2>
+        <button onClick="{{ goShop }}" style="background:none; border:none; padding:0; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#6B2737;">See all →</button>
+      </div>
+      <div style="display:grid; gap:20px; grid-template-columns:repeat(auto-fill, minmax(215px, 1fr));">
+        <sc-for list="{{ newIn }}" as="item" hint-placeholder-count="4">
+          <button onClick="{{ item.open }}" style="background:none; border:none; padding:0; text-align:left; display:block;">
+            <div style="position:relative; aspect-ratio:3/4; border:1px solid rgba(43,43,43,0.12); background:repeating-linear-gradient(135deg, #EBE3D6 0 9px, #F3EDE3 9px 18px); display:flex; align-items:flex-end; padding:12px;">
+              <span style="font-family:ui-monospace, monospace; font-size:10px; line-height:1.4; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:5px 7px;">{{ item.label }}</span>
+            </div>
+            <p style="margin:12px 0 2px; font-family:'Instrument Serif', serif; font-size:20px; line-height:1.2;">{{ item.name }}</p>
+            <p style="margin:0; font-size:14px; color:rgba(43,43,43,0.7);">{{ item.priceText }}</p>
+          </button>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="max-width:1180px; margin:0 auto; padding:56px 22px 0;">
+      <div style="display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));">
+        <sc-for list="{{ categories }}" as="cat" hint-placeholder-count="3">
+          <button onClick="{{ cat.open }}" style="background:none; border:1px solid rgba(43,43,43,0.14); padding:0; text-align:left; display:block;">
+            <div style="aspect-ratio:5/4; background:repeating-linear-gradient(135deg, #E7DFD1 0 9px, #F0EAE0 9px 18px); display:flex; align-items:flex-end; padding:12px;">
+              <span style="font-family:ui-monospace, monospace; font-size:10px; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:5px 7px;">{{ cat.label }}</span>
+            </div>
+            <div style="padding:16px 18px 18px; display:flex; align-items:baseline; justify-content:space-between; gap:10px;">
+              <span style="font-family:'Instrument Serif', serif; font-size:24px;">{{ cat.name }}</span>
+              <span style="font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#6B2737;">Shop →</span>
+            </div>
+          </button>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="max-width:1180px; margin:0 auto; padding:60px 22px 0;">
+      <div style="display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; margin-bottom:20px;">
+        <h2 style="margin:0; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(28px, 4vw, 38px);">Staff picks</h2>
+        <span style="font-family:Caveat, cursive; font-size:22px; color:#B5654A; transform:rotate(-2deg); display:inline-block;">things we've nicked for ourselves</span>
+      </div>
+      <div style="display:grid; gap:20px; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));">
+        <sc-for list="{{ staffPicks }}" as="item" hint-placeholder-count="3">
+          <div style="border:1px solid rgba(43,43,43,0.12); background:#FBF8F2; padding:16px;">
+            <button onClick="{{ item.open }}" style="background:none; border:none; padding:0; display:block; width:100%; text-align:left;">
+              <div style="aspect-ratio:1; background:repeating-linear-gradient(135deg, #EBE3D6 0 9px, #F3EDE3 9px 18px); display:flex; align-items:flex-end; padding:12px;">
+                <span style="font-family:ui-monospace, monospace; font-size:10px; color:rgba(43,43,43,0.6); background:#FBF8F2; padding:5px 7px;">{{ item.label }}</span>
+              </div>
+              <p style="margin:12px 0 2px; font-family:'Instrument Serif', serif; font-size:20px;">{{ item.name }}</p>
+              <p style="margin:0; font-size:14px; color:rgba(43,43,43,0.7);">{{ item.priceText }}</p>
+            </button>
+            <p style="margin:10px 0 0; font-family:Caveat, cursive; font-size:21px; line-height:1.3; color:#6B2737;">{{ item.note }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="max-width:1180px; margin:0 auto; padding:64px 22px 0;">
+      <div style="border-top:1px solid rgba(43,43,43,0.14); border-bottom:1px solid rgba(43,43,43,0.14); padding:40px 0; display:grid; gap:28px; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); align-items:center;">
+        <div>
+          <h2 style="margin:0 0 14px; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(26px, 3.6vw, 34px);">An oddment is a leftover piece of cloth</h2>
+          <p style="margin:0 0 20px; max-width:46ch; color:rgba(43,43,43,0.82);">We named the shop after the bits that get kept back because someone saw something in them. That's more or less how we buy: small runs, odd sizes, things that won't turn up in every window on the street.</p>
+          <button onClick="{{ goAbout }}" style="background:none; border:1px solid rgba(43,43,43,0.3); border-radius:2px; padding:13px 24px; font-size:13px; letter-spacing:0.06em; text-transform:uppercase;">Our story</button>
+        </div>
+        <div style="aspect-ratio:16/10; border:1px solid rgba(43,43,43,0.14); background:repeating-linear-gradient(135deg, #E7DFD1 0 9px, #F0EAE0 9px 18px); display:flex; align-items:flex-end; padding:14px;">
+          <span style="font-family:ui-monospace, monospace; font-size:10px; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:5px 7px;">shop interior — rails and counter</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width:1180px; margin:0 auto; padding:40px 22px 70px;">
+      <div style="background:#2B2B2B; color:#F5F0E8; padding:34px; display:grid; gap:24px; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));">
+        <div>
+          <p style="margin:0 0 8px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:#8A9A7B;">Come in</p>
+          <p style="margin:0; font-family:'Instrument Serif', serif; font-size:26px; line-height:1.25;">12 Weaver's Row<br>Northern Quarter, M4 1AA</p>
+        </div>
+        <div>
+          <p style="margin:0 0 8px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:#8A9A7B;">Open</p>
+          <p style="margin:0; font-size:16px; line-height:1.8;">Mon–Sat 10am–6pm<br>Sun 11am–4pm</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px; justify-content:center;">
+          <button onClick="{{ goVisit }}" style="background:#F5F0E8; color:#2B2B2B; border:none; border-radius:2px; padding:14px 22px; font-size:13px; letter-spacing:0.06em; text-transform:uppercase;">Directions & click &amp; collect</button>
+          <a href="#instagram" style="color:#F5F0E8; font-size:14px; text-align:center; border:1px solid rgba(245,240,232,0.4); padding:13px 22px; border-radius:2px;">Message us on Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isShop }}" hint-placeholder-val="{{ false }}">
+  <main style="max-width:1180px; margin:0 auto; padding:34px 22px 70px;">
+    <p style="margin:0 0 10px; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#8A9A7B;">{{ shopCrumb }}</p>
+    <h1 style="margin:0 0 4px; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(34px, 5vw, 46px);">{{ shopTitle }}</h1>
+    <p style="margin:0 0 26px; font-size:14px; color:rgba(43,43,43,0.7);">{{ resultCount }} · Free UK delivery over £75</p>
+
+    <div style="display:grid; gap:30px; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));">
+      <aside style="max-width:280px;">
+        <div style="border-top:1px solid rgba(43,43,43,0.14); padding:18px 0;">
+          <p style="margin:0 0 12px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(43,43,43,0.6);">Category</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px;">
+            <sc-for list="{{ catFilters }}" as="f" hint-placeholder-count="4">
+              <button onClick="{{ f.pick }}" style="{{ f.style }}">{{ f.name }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <div style="border-top:1px solid rgba(43,43,43,0.14); padding:18px 0;">
+          <p style="margin:0 0 12px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(43,43,43,0.6);">Size</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px;">
+            <sc-for list="{{ sizeFilters }}" as="f" hint-placeholder-count="8">
+              <button onClick="{{ f.pick }}" style="{{ f.style }}">{{ f.name }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <div style="border-top:1px solid rgba(43,43,43,0.14); border-bottom:1px solid rgba(43,43,43,0.14); padding:18px 0;">
+          <p style="margin:0 0 12px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(43,43,43,0.6);">Price up to {{ maxPriceText }}</p>
+          <input type="range" min="30" max="200" step="5" value="{{ maxPrice }}" onChange="{{ setMaxPrice }}" style="width:100%; accent-color:#6B2737;">
+          <div style="display:flex; justify-content:space-between; font-size:12px; color:rgba(43,43,43,0.6); margin-top:6px;"><span>£30</span><span>£200</span></div>
+        </div>
+        <button onClick="{{ clearFilters }}" style="margin-top:16px; background:none; border:none; padding:0; font-size:13px; color:#6B2737; text-decoration:underline;">Clear filters</button>
+      </aside>
+
+      <div style="grid-column:span 2; min-width:0;">
+        <div style="display:flex; justify-content:flex-end; margin-bottom:16px;">
+          <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:rgba(43,43,43,0.7);">Sort
+            <select value="{{ sort }}" onChange="{{ setSort }}" style="background:#FBF8F2; border:1px solid rgba(43,43,43,0.2); padding:8px 10px; font-size:13px; border-radius:2px;">
+              <option value="new">New in</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+            </select>
+          </label>
+        </div>
+        <div style="display:grid; gap:20px; grid-template-columns:repeat(auto-fill, minmax(215px, 1fr));">
+          <sc-for list="{{ listing }}" as="item" hint-placeholder-count="6">
+            <button onClick="{{ item.open }}" style="background:none; border:none; padding:0; text-align:left; display:block;">
+              <div style="position:relative; aspect-ratio:3/4; border:1px solid rgba(43,43,43,0.12); background:repeating-linear-gradient(135deg, #EBE3D6 0 9px, #F3EDE3 9px 18px); display:flex; align-items:flex-end; padding:12px;">
+                <span style="font-family:ui-monospace, monospace; font-size:10px; line-height:1.4; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:5px 7px;">{{ item.label }}</span>
+                <sc-if value="{{ item.low }}" hint-placeholder-val="{{ false }}">
+                  <span style="position:absolute; top:10px; left:10px; background:#F5F0E8; border:1px solid #B5654A; color:#B5654A; font-size:11px; letter-spacing:0.04em; padding:4px 8px;">{{ item.lowText }}</span>
+                </sc-if>
+              </div>
+              <p style="margin:12px 0 2px; font-family:'Instrument Serif', serif; font-size:20px; line-height:1.2;">{{ item.name }}</p>
+              <p style="margin:0; font-size:14px; color:rgba(43,43,43,0.7);">{{ item.priceText }}</p>
+            </button>
+          </sc-for>
+        </div>
+        <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+          <p style="padding:40px 0; font-family:'Instrument Serif', serif; font-size:24px;">Nothing matches that just yet. Try widening the price, or <a href="#instagram">ask us on Instagram</a>.</p>
+        </sc-if>
+      </div>
+    </div>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isProduct }}" hint-placeholder-val="{{ false }}">
+  <main style="max-width:1180px; margin:0 auto; padding:26px 22px 70px;">
+    <button onClick="{{ goShop }}" style="background:none; border:none; padding:0; font-size:13px; color:rgba(43,43,43,0.7); margin-bottom:20px;">← Back to {{ product.cat }}</button>
+    <div style="display:grid; gap:40px; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));">
+      <div>
+        <div style="aspect-ratio:4/5; border:1px solid rgba(43,43,43,0.12); background:repeating-linear-gradient(135deg, #EBE3D6 0 10px, #F3EDE3 10px 20px); display:flex; align-items:flex-end; padding:14px;">
+          <span style="font-family:ui-monospace, monospace; font-size:11px; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:6px 8px;">{{ product.label }}</span>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin-top:10px;">
+          <sc-for list="{{ product.thumbs }}" as="t" hint-placeholder-count="3">
+            <div style="aspect-ratio:1; border:1px solid rgba(43,43,43,0.12); background:repeating-linear-gradient(135deg, #E7DFD1 0 8px, #F0EAE0 8px 16px); display:flex; align-items:flex-end; padding:8px;">
+              <span style="font-family:ui-monospace, monospace; font-size:9px; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:4px 5px;">{{ t.label }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="min-width:0;">
+        <p style="margin:0 0 8px; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#8A9A7B;">{{ product.cat }}</p>
+        <h1 style="margin:0 0 8px; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(30px, 4.4vw, 42px); line-height:1.1;">{{ product.name }}</h1>
+        <p style="margin:0 0 20px; font-size:20px;">{{ product.priceText }}</p>
+        <p style="margin:0 0 24px; color:rgba(43,43,43,0.82); max-width:46ch;">{{ product.blurb }}</p>
+
+        <sc-if value="{{ product.hasNote }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex; gap:12px; align-items:flex-start; background:#FBF8F2; border:1px solid rgba(181,101,74,0.4); padding:14px 16px; margin-bottom:24px;">
+            <svg viewBox="0 0 24 24" width="20" height="20" style="flex:none; margin-top:3px;" aria-hidden="true"><path d="M4 20 C 9 14, 15 8, 20 4" fill="none" stroke="#B5654A" stroke-width="2" stroke-linecap="round"></path><circle cx="20" cy="4" r="2" fill="#B5654A"></circle></svg>
+            <div>
+              <p style="margin:0 0 2px; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#B5654A;">Staff pick</p>
+              <p style="margin:0; font-family:Caveat, cursive; font-size:22px; line-height:1.3; color:#6B2737;">{{ product.note }}</p>
+            </div>
+          </div>
+        </sc-if>
+
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:10px;">
+          <p style="margin:0; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(43,43,43,0.6);">Size</p>
+          <button onClick="{{ openSizeGuide }}" style="background:none; border:none; padding:0; font-size:13px; color:#6B2737; text-decoration:underline;">Size guide</button>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <sc-for list="{{ product.sizes }}" as="s" hint-placeholder-count="5">
+            <button onClick="{{ s.pick }}" disabled="{{ s.out }}" style="{{ s.style }}">
+              <span style="font-size:15px;">{{ s.name }}</span>
+              <span style="font-size:10px; letter-spacing:0.04em; color:{{ s.hintColor }};">{{ s.hint }}</span>
+            </button>
+          </sc-for>
+        </div>
+
+        <sc-if value="{{ product.showLow }}" hint-placeholder-val="{{ false }}">
+          <p style="margin:14px 0 0; display:inline-flex; gap:8px; align-items:center; font-size:14px; color:#B5654A;">
+            <span style="width:7px; height:7px; border-radius:50%; background:#B5654A; display:inline-block;"></span>{{ product.lowLine }}
+          </p>
+        </sc-if>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:26px;">
+          <button onClick="{{ addToBag }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:16px 34px; font-size:14px; letter-spacing:0.06em; text-transform:uppercase;">{{ addLabel }}</button>
+          <a href="#instagram" style="border:1px solid rgba(43,43,43,0.3); border-radius:2px; padding:16px 24px; font-size:14px; color:#2B2B2B;">Ask us on Instagram</a>
+        </div>
+
+        <div style="margin-top:28px; border-top:1px solid rgba(43,43,43,0.14); padding-top:18px; font-size:14px; color:rgba(43,43,43,0.78); display:flex; flex-direction:column; gap:8px;">
+          <span>Standard UK delivery £3.95 · free over £75 · 2–4 working days</span>
+          <span>Click &amp; collect from Weaver's Row — free, usually ready same day</span>
+          <span>Returns within 28 days, in shop or by post</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isBag }}" hint-placeholder-val="{{ false }}">
+  <main style="max-width:980px; margin:0 auto; padding:34px 22px 70px;">
+    <h1 style="margin:0 0 26px; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(32px, 5vw, 44px);">Your bag</h1>
+    <sc-if value="{{ bagEmpty }}" hint-placeholder-val="{{ false }}">
+      <div style="border:1px solid rgba(43,43,43,0.14); padding:40px; text-align:center;">
+        <p style="margin:0 0 6px; font-family:'Instrument Serif', serif; font-size:26px;">Nothing in here yet.</p>
+        <p style="margin:0 0 22px; font-family:Caveat, cursive; font-size:22px; color:#B5654A;">go on, have a look round</p>
+        <button onClick="{{ goShop }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:14px 28px; font-size:13px; letter-spacing:0.06em; text-transform:uppercase;">Start shopping</button>
+      </div>
+    </sc-if>
+    <sc-if value="{{ bagHasItems }}" hint-placeholder-val="{{ true }}">
+      <div style="display:grid; gap:34px; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));">
+        <div style="min-width:0;">
+          <sc-for list="{{ bagLines }}" as="line" hint-placeholder-count="2">
+            <div style="display:flex; gap:16px; padding:18px 0; border-top:1px solid rgba(43,43,43,0.14);">
+              <div style="width:92px; flex:none; aspect-ratio:3/4; border:1px solid rgba(43,43,43,0.12); background:repeating-linear-gradient(135deg, #EBE3D6 0 8px, #F3EDE3 8px 16px);"></div>
+              <div style="flex:1; min-width:0;">
+                <p style="margin:0 0 2px; font-family:'Instrument Serif', serif; font-size:20px; line-height:1.2;">{{ line.name }}</p>
+                <p style="margin:0 0 10px; font-size:13px; color:rgba(43,43,43,0.7);">Size {{ line.size }} · {{ line.priceText }}</p>
+                <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+                  <div style="display:flex; align-items:center; border:1px solid rgba(43,43,43,0.24);">
+                    <button onClick="{{ line.dec }}" style="background:none; border:none; padding:6px 12px; font-size:16px;">−</button>
+                    <span style="padding:0 6px; font-size:14px; min-width:20px; text-align:center;">{{ line.qty }}</span>
+                    <button onClick="{{ line.inc }}" style="background:none; border:none; padding:6px 12px; font-size:16px;">+</button>
+                  </div>
+                  <button onClick="{{ line.remove }}" style="background:none; border:none; padding:0; font-size:13px; color:rgba(43,43,43,0.6); text-decoration:underline;">Remove</button>
+                </div>
+              </div>
+              <p style="margin:0; font-size:16px;">{{ line.totalText }}</p>
+            </div>
+          </sc-for>
+        </div>
+        <div style="max-width:360px;">
+          <div style="border:1px solid rgba(43,43,43,0.14); background:#FBF8F2; padding:22px;">
+            <div style="display:flex; justify-content:space-between; font-size:15px; margin-bottom:10px;"><span>Subtotal</span><span>{{ subtotalText }}</span></div>
+            <div style="display:flex; justify-content:space-between; font-size:15px; margin-bottom:10px;"><span>Delivery (standard)</span><span>{{ deliveryText }}</span></div>
+            <div style="display:flex; justify-content:space-between; font-size:15px; margin-bottom:14px; color:rgba(43,43,43,0.7);"><span>Click &amp; collect</span><span>Free</span></div>
+            <div style="border-top:1px solid rgba(43,43,43,0.16); padding-top:14px; display:flex; justify-content:space-between; font-family:'Instrument Serif', serif; font-size:24px;"><span>Total</span><span>{{ bagTotalText }}</span></div>
+            <p style="margin:12px 0 18px; font-size:13px; color:rgba(43,43,43,0.7);">{{ deliveryNote }}</p>
+            <button onClick="{{ goCheckout }}" style="width:100%; background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:16px; font-size:14px; letter-spacing:0.06em; text-transform:uppercase;">Checkout</button>
+            <button onClick="{{ goShop }}" style="width:100%; background:none; border:none; padding:14px 0 0; font-size:13px; color:#6B2737; text-decoration:underline;">Keep shopping</button>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isCheckout }}" hint-placeholder-val="{{ false }}">
+  <main style="max-width:980px; margin:0 auto; padding:34px 22px 70px;">
+    <div style="display:flex; gap:10px; align-items:center; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(43,43,43,0.55); margin-bottom:22px; flex-wrap:wrap;">
+      <span style="color:{{ step1Color }};">1 · How you'll get it</span><span>—</span>
+      <span style="color:{{ step2Color }};">2 · Your details</span><span>—</span>
+      <span style="color:{{ step3Color }};">3 · Payment</span>
+    </div>
+
+    <sc-if value="{{ atMethod }}" hint-placeholder-val="{{ true }}">
+      <h1 style="margin:0 0 6px; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(30px, 4.6vw, 42px);">Delivery or collection?</h1>
+      <p style="margin:0 0 26px; color:rgba(43,43,43,0.75);">Both work the same at the till. Collection is free and usually ready the same day.</p>
+      <div style="display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));">
+        <button onClick="{{ pickCollect }}" style="{{ collectCardStyle }}">
+          <p style="margin:0 0 6px; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#8A9A7B;">Free</p>
+          <p style="margin:0 0 8px; font-family:'Instrument Serif', serif; font-size:26px;">Click &amp; collect</p>
+          <p style="margin:0 0 12px; font-size:14px; color:rgba(43,43,43,0.78);">Pick up from 12 Weaver's Row. We'll text you when it's on the shelf — usually within a few hours.</p>
+          <p style="margin:0; font-family:Caveat, cursive; font-size:20px; color:#B5654A;">kettle's on</p>
+        </button>
+        <button onClick="{{ pickDelivery }}" style="{{ deliveryCardStyle }}">
+          <p style="margin:0 0 6px; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#8A9A7B;">{{ deliveryPriceLabel }}</p>
+          <p style="margin:0 0 8px; font-family:'Instrument Serif', serif; font-size:26px;">Standard delivery</p>
+          <p style="margin:0 0 12px; font-size:14px; color:rgba(43,43,43,0.78);">Royal Mail Tracked 48, 2–4 working days. Free on orders over £75.</p>
+          <p style="margin:0; font-size:13px; color:rgba(43,43,43,0.6);">Sent from the shop, wrapped in tissue.</p>
+        </button>
+      </div>
+      <div style="margin-top:26px; display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+        <button onClick="{{ toDetails }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:16px 32px; font-size:14px; letter-spacing:0.06em; text-transform:uppercase;">Continue</button>
+        <span style="font-size:14px; color:rgba(43,43,43,0.7);">{{ methodSummary }}</span>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ atDetails }}" hint-placeholder-val="{{ false }}">
+      <h1 style="margin:0 0 22px; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(30px, 4.6vw, 42px);">Your details</h1>
+      <div style="display:grid; gap:34px; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));">
+        <div style="display:flex; flex-direction:column; gap:14px; min-width:0;">
+          <label style="display:flex; flex-direction:column; gap:6px; font-size:13px; color:rgba(43,43,43,0.7);">Name
+            <input value="{{ form.name }}" onChange="{{ setName }}" placeholder="Jo Whitaker" style="background:#FBF8F2; border:1px solid rgba(43,43,43,0.22); padding:13px; font-size:15px; border-radius:2px;">
+          </label>
+          <label style="display:flex; flex-direction:column; gap:6px; font-size:13px; color:rgba(43,43,43,0.7);">Email
+            <input value="{{ form.email }}" onChange="{{ setEmail }}" placeholder="jo@example.co.uk" style="background:#FBF8F2; border:1px solid rgba(43,43,43,0.22); padding:13px; font-size:15px; border-radius:2px;">
+          </label>
+          <label style="display:flex; flex-direction:column; gap:6px; font-size:13px; color:rgba(43,43,43,0.7);">{{ addressLabel }}
+            <input value="{{ form.address }}" onChange="{{ setAddress }}" placeholder="{{ addressPlaceholder }}" style="background:#FBF8F2; border:1px solid rgba(43,43,43,0.22); padding:13px; font-size:15px; border-radius:2px;">
+          </label>
+          <sc-if value="{{ formError }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0; font-size:13px; color:#B5654A;">{{ formErrorText }}</p>
+          </sc-if>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:6px;">
+            <button onClick="{{ toPay }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:16px 32px; font-size:14px; letter-spacing:0.06em; text-transform:uppercase;">Continue to payment</button>
+            <button onClick="{{ toMethod }}" style="background:none; border:none; padding:0 8px; font-size:13px; color:#6B2737; text-decoration:underline;">Back</button>
+          </div>
+        </div>
+        <div style="max-width:340px;">
+          <div style="border:1px solid rgba(43,43,43,0.14); background:#FBF8F2; padding:20px;">
+            <p style="margin:0 0 12px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(43,43,43,0.6);">Order</p>
+            <sc-for list="{{ bagLines }}" as="line" hint-placeholder-count="2">
+              <div style="display:flex; justify-content:space-between; gap:10px; font-size:14px; margin-bottom:8px;"><span>{{ line.summary }}</span><span>{{ line.totalText }}</span></div>
+            </sc-for>
+            <div style="display:flex; justify-content:space-between; font-size:14px; margin:12px 0 4px;"><span>{{ methodLine }}</span><span>{{ methodCostText }}</span></div>
+            <div style="border-top:1px solid rgba(43,43,43,0.16); margin-top:12px; padding-top:12px; display:flex; justify-content:space-between; font-family:'Instrument Serif', serif; font-size:22px;"><span>Total</span><span>{{ orderTotalText }}</span></div>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ atPay }}" hint-placeholder-val="{{ false }}">
+      <h1 style="margin:0 0 6px; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(30px, 4.6vw, 42px);">Payment</h1>
+      <p style="margin:0 0 24px; font-size:14px; color:#B5654A;">Demo only — no card is charged.</p>
+      <div style="display:grid; gap:34px; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));">
+        <div style="display:flex; flex-direction:column; gap:14px; min-width:0;">
+          <label style="display:flex; flex-direction:column; gap:6px; font-size:13px; color:rgba(43,43,43,0.7);">Card number
+            <input value="4242 4242 4242 4242" readonly="true" style="background:#FBF8F2; border:1px solid rgba(43,43,43,0.22); padding:13px; font-size:15px; border-radius:2px; color:rgba(43,43,43,0.6);">
+          </label>
+          <div style="display:flex; gap:12px;">
+            <label style="flex:1; display:flex; flex-direction:column; gap:6px; font-size:13px; color:rgba(43,43,43,0.7);">Expiry
+              <input value="09/29" readonly="true" style="background:#FBF8F2; border:1px solid rgba(43,43,43,0.22); padding:13px; font-size:15px; border-radius:2px; color:rgba(43,43,43,0.6);">
+            </label>
+            <label style="flex:1; display:flex; flex-direction:column; gap:6px; font-size:13px; color:rgba(43,43,43,0.7);">CVC
+              <input value="123" readonly="true" style="background:#FBF8F2; border:1px solid rgba(43,43,43,0.22); padding:13px; font-size:15px; border-radius:2px; color:rgba(43,43,43,0.6);">
+            </label>
+          </div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:6px;">
+            <button onClick="{{ placeOrder }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:16px 32px; font-size:14px; letter-spacing:0.06em; text-transform:uppercase;">Pay {{ orderTotalText }}</button>
+            <button onClick="{{ toDetails }}" style="background:none; border:none; padding:0 8px; font-size:13px; color:#6B2737; text-decoration:underline;">Back</button>
+          </div>
+        </div>
+        <div style="max-width:340px;">
+          <div style="border:1px solid rgba(43,43,43,0.14); background:#FBF8F2; padding:20px; font-size:14px;">
+            <p style="margin:0 0 10px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(43,43,43,0.6);">{{ methodLine }}</p>
+            <p style="margin:0 0 10px;">{{ form.address }}</p>
+            <p style="margin:0; color:rgba(43,43,43,0.7);">{{ methodTiming }}</p>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isConfirm }}" hint-placeholder-val="{{ false }}">
+  <main style="max-width:720px; margin:0 auto; padding:56px 22px 80px; text-align:center;">
+    <svg viewBox="0 0 120 20" width="130" height="20" style="overflow:visible; margin-bottom:18px;" aria-hidden="true"><path d="M3 14 C 34 3, 86 19, 117 7" fill="none" stroke="#8A9A7B" stroke-width="2.6" stroke-linecap="round"></path></svg>
+    <h1 style="margin:0 0 12px; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(32px, 5vw, 46px);">That's all sorted</h1>
+    <p style="margin:0 0 6px; font-size:17px; color:rgba(43,43,43,0.82);">Order {{ orderRef }} — confirmation on its way to {{ form.email }}.</p>
+    <p style="margin:0 0 30px; font-family:Caveat, cursive; font-size:24px; color:#B5654A;">thanks, from the four of us</p>
+    <div style="border:1px solid rgba(43,43,43,0.14); background:#FBF8F2; padding:24px; text-align:left; margin-bottom:24px;">
+      <p style="margin:0 0 10px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(43,43,43,0.6);">{{ methodLine }}</p>
+      <p style="margin:0 0 4px; font-size:16px;">{{ confirmAddress }}</p>
+      <p style="margin:0 0 16px; font-size:14px; color:rgba(43,43,43,0.7);">{{ methodTiming }}</p>
+      <div style="border-top:1px solid rgba(43,43,43,0.16); padding-top:14px; display:flex; justify-content:space-between; font-size:16px;"><span>Paid</span><span>{{ orderTotalText }}</span></div>
+    </div>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <button onClick="{{ goHome }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:15px 28px; font-size:13px; letter-spacing:0.06em; text-transform:uppercase;">Back to the shop</button>
+      <a href="#instagram" style="border:1px solid rgba(43,43,43,0.3); border-radius:2px; padding:15px 24px; font-size:14px; color:#2B2B2B;">Message us on Instagram</a>
+    </div>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isVisit }}" hint-placeholder-val="{{ false }}">
+  <main style="max-width:1180px; margin:0 auto; padding:34px 22px 70px;">
+    <h1 style="margin:0 0 8px; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(34px, 5vw, 48px);">Visit the shop</h1>
+    <p style="margin:0 0 30px; max-width:52ch; color:rgba(43,43,43,0.82);">We're a two-minute walk from Stevenson Square, next to the print studio. Knock on the window if the door sticks.</p>
+    <div style="display:grid; gap:30px; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));">
+      <div>
+        <div style="aspect-ratio:4/3; border:1px solid rgba(43,43,43,0.14); background:repeating-linear-gradient(135deg, #E7DFD1 0 10px, #F0EAE0 10px 20px); display:flex; align-items:flex-end; padding:14px; margin-bottom:12px;">
+          <span style="font-family:ui-monospace, monospace; font-size:11px; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:6px 8px;">shopfront photo — Weaver's Row exterior</span>
+        </div>
+        <div style="aspect-ratio:16/9; border:1px solid rgba(43,43,43,0.14); background:repeating-linear-gradient(135deg, #E3E7DC 0 10px, #EEF0E8 10px 20px); display:flex; align-items:center; justify-content:center;">
+          <span style="font-family:ui-monospace, monospace; font-size:11px; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:6px 8px;">map — M4 1AA, Northern Quarter</span>
+        </div>
+      </div>
+      <div style="min-width:0;">
+        <div style="border-top:1px solid rgba(43,43,43,0.14); padding:20px 0;">
+          <p style="margin:0 0 8px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(43,43,43,0.6);">Address</p>
+          <p style="margin:0; font-family:'Instrument Serif', serif; font-size:24px; line-height:1.3;">12 Weaver's Row<br>Northern Quarter, Manchester M4 1AA</p>
+        </div>
+        <div style="border-top:1px solid rgba(43,43,43,0.14); padding:20px 0;">
+          <p style="margin:0 0 10px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(43,43,43,0.6);">Opening hours</p>
+          <div style="display:flex; justify-content:space-between; max-width:320px; font-size:16px; margin-bottom:6px;"><span>Monday–Saturday</span><span>10am–6pm</span></div>
+          <div style="display:flex; justify-content:space-between; max-width:320px; font-size:16px;"><span>Sunday</span><span>11am–4pm</span></div>
+        </div>
+        <div style="border-top:1px solid rgba(43,43,43,0.14); border-bottom:1px solid rgba(43,43,43,0.14); padding:20px 0;">
+          <p style="margin:0 0 12px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(43,43,43,0.6);">How click &amp; collect works</p>
+          <ol style="margin:0; padding-left:20px; font-size:16px; line-height:1.9; color:rgba(43,43,43,0.85);">
+            <li>Choose collection at checkout — it's free.</li>
+            <li>We pull the piece and text you when it's ready, usually a few hours.</li>
+            <li>Come in any time within seven days. Try it on properly while you're here.</li>
+          </ol>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
+          <button onClick="{{ goShop }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:15px 26px; font-size:13px; letter-spacing:0.06em; text-transform:uppercase;">Shop for collection</button>
+          <a href="#instagram" style="border:1px solid rgba(43,43,43,0.3); border-radius:2px; padding:15px 22px; font-size:14px; color:#2B2B2B;">@oddment.mcr</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+  <main style="max-width:760px; margin:0 auto; padding:44px 22px 80px;">
+    <p style="margin:0 0 12px; font-size:11px; letter-spacing:0.24em; text-transform:uppercase; color:#8A9A7B;">About</p>
+    <h1 style="margin:0; font-family:'Instrument Serif', serif; font-weight:400; font-size:clamp(34px, 5.4vw, 50px); line-height:1.1;">The shop on Weaver's Row</h1>
+    <svg viewBox="0 0 220 12" width="180" height="11" style="display:block; margin:14px 0 28px; overflow:visible;" aria-hidden="true"><path d="M2 8 C 60 1, 150 12, 218 4" fill="none" stroke="#B5654A" stroke-width="2.4" stroke-linecap="round"></path></svg>
+    <div style="font-size:18px; line-height:1.75; color:rgba(43,43,43,0.88); display:flex; flex-direction:column; gap:20px;">
+      <p style="margin:0;">Oddment started in 2016 as a rail of coats in the corner of a friend's print studio. We had no plan beyond buying things we liked and hoping somebody else would like them too. Nine years later we have a proper door, a proper till, and the same buying habit.</p>
+      <p style="margin:0;">The name comes from the offcuts a tailor keeps back — the leftover lengths too good to bin. We buy the same way: small runs, end-of-roll fabrics, the odd sizes other shops send back. It means we often have two of something and never twelve, and that when a piece goes, it usually goes for good.</p>
+      <p style="margin:0;">Four of us run the place. Sam does most of the womenswear buying, Rob the menswear, Nia the shop floor and everything on Instagram, and Dev keeps the books from the back room. If you order online, one of us wraps it.</p>
+    </div>
+    <div style="aspect-ratio:16/9; border:1px solid rgba(43,43,43,0.14); background:repeating-linear-gradient(135deg, #E7DFD1 0 10px, #F0EAE0 10px 20px); display:flex; align-items:flex-end; padding:14px; margin:32px 0;">
+      <span style="font-family:ui-monospace, monospace; font-size:11px; color:rgba(43,43,43,0.6); background:#F5F0E8; padding:6px 8px;">photo — the four of us behind the counter</span>
+    </div>
+    <p style="margin:0; font-family:Caveat, cursive; font-size:26px; color:#B5654A;">come and say hello — we're usually all in on Saturdays</p>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ isAdmin }}" hint-placeholder-val="{{ false }}">
+  <main style="background:#FBFAF7; min-height:80vh; padding:26px 22px 60px;">
+    <div style="max-width:1180px; margin:0 auto;">
+      <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap; border-bottom:1px solid rgba(43,43,43,0.14); padding-bottom:16px; margin-bottom:26px;">
+        <span style="font-family:Karla, sans-serif; font-weight:600; font-size:15px; letter-spacing:0.02em;">Oddment Admin</span>
+        <span style="font-size:12px; color:rgba(43,43,43,0.55);">Signed in as nia@oddment.co.uk</span>
+        <div style="margin-left:auto; display:flex; gap:8px;">
+          <sc-for list="{{ adminTabs }}" as="t" hint-placeholder-count="3">
+            <button onClick="{{ t.pick }}" style="{{ t.style }}">{{ t.name }}</button>
+          </sc-for>
+        </div>
+      </div>
+
+      <sc-if value="{{ adminOverview }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid; gap:14px; grid-template-columns:repeat(auto-fit, minmax(170px, 1fr)); margin-bottom:28px;">
+          <sc-for list="{{ adminStats }}" as="s" hint-placeholder-count="4">
+            <div style="border:1px solid rgba(43,43,43,0.14); background:#fff; padding:16px;">
+              <p style="margin:0 0 6px; font-size:12px; color:rgba(43,43,43,0.6);">{{ s.label }}</p>
+              <p style="margin:0; font-size:26px; font-weight:500;">{{ s.value }}</p>
+              <p style="margin:4px 0 0; font-size:12px; color:#8A9A7B;">{{ s.sub }}</p>
+            </div>
+          </sc-for>
+        </div>
+        <div style="border:1px solid rgba(43,43,43,0.14); background:#fff;">
+          <p style="margin:0; padding:14px 16px; font-size:13px; font-weight:600; border-bottom:1px solid rgba(43,43,43,0.12);">Recent orders</p>
+          <sc-for list="{{ orders }}" as="o" hint-placeholder-count="5">
+            <button onClick="{{ o.open }}" style="width:100%; background:none; border:none; border-bottom:1px solid rgba(43,43,43,0.08); padding:13px 16px; display:flex; gap:12px; align-items:center; text-align:left; font-size:14px;">
+              <span style="width:88px; flex:none; font-family:ui-monospace, monospace; font-size:12px;">{{ o.ref }}</span>
+              <span style="flex:1; min-width:0;">{{ o.customer }}</span>
+              <span style="width:110px; flex:none; font-size:12px; color:rgba(43,43,43,0.65);">{{ o.method }}</span>
+              <span style="flex:none; font-size:11px; letter-spacing:0.04em; padding:3px 8px; border:1px solid; color:{{ o.statusColor }}; border-color:{{ o.statusColor }};">{{ o.status }}</span>
+              <span style="width:64px; flex:none; text-align:right;">{{ o.total }}</span>
+            </button>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ adminOrderView }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ backToOverview }}" style="background:none; border:none; padding:0; font-size:13px; color:#6B2737; margin-bottom:16px;">← All orders</button>
+        <div style="display:grid; gap:20px; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));">
+          <div style="border:1px solid rgba(43,43,43,0.14); background:#fff; padding:20px; min-width:0;">
+            <p style="margin:0 0 4px; font-family:ui-monospace, monospace; font-size:13px; color:rgba(43,43,43,0.6);">{{ order.ref }}</p>
+            <p style="margin:0 0 18px; font-size:22px;">{{ order.customer }}</p>
+            <sc-for list="{{ order.items }}" as="i" hint-placeholder-count="2">
+              <div style="display:flex; justify-content:space-between; gap:12px; font-size:14px; padding:8px 0; border-top:1px solid rgba(43,43,43,0.1);"><span>{{ i.name }}</span><span>{{ i.price }}</span></div>
+            </sc-for>
+            <div style="display:flex; justify-content:space-between; font-size:15px; font-weight:600; padding:12px 0 0; margin-top:8px; border-top:1px solid rgba(43,43,43,0.2);"><span>Total</span><span>{{ order.total }}</span></div>
+          </div>
+          <div style="border:1px solid rgba(43,43,43,0.14); background:#fff; padding:20px; font-size:14px; line-height:1.9;">
+            <p style="margin:0 0 12px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(43,43,43,0.55);">Fulfilment</p>
+            <p style="margin:0;">{{ order.method }}</p>
+            <p style="margin:0; color:rgba(43,43,43,0.7);">{{ order.address }}</p>
+            <p style="margin:0; color:rgba(43,43,43,0.7);">{{ order.placed }}</p>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <button onClick="{{ markReady }}" style="background:#6B2737; color:#F5F0E8; border:none; border-radius:2px; padding:11px 18px; font-size:13px;">{{ order.action }}</button>
+              <button onClick="{{ backToOverview }}" style="background:none; border:1px solid rgba(43,43,43,0.24); border-radius:2px; padding:11px 18px; font-size:13px;">Print packing slip</button>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ adminStock }}" hint-placeholder-val="{{ false }}">
+        <p style="margin:0 0 16px; font-size:14px; color:rgba(43,43,43,0.7);">Adjust counts as stock moves between the shop floor and online. Anything at two or fewer shows a low-stock note to customers.</p>
+        <div style="border:1px solid rgba(43,43,43,0.14); background:#fff;">
+          <sc-for list="{{ stockRows }}" as="row" hint-placeholder-count="6">
+            <div style="padding:14px 16px; border-bottom:1px solid rgba(43,43,43,0.08); display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+              <div style="min-width:180px; flex:1;">
+                <p style="margin:0; font-size:15px;">{{ row.name }}</p>
+                <p style="margin:2px 0 0; font-size:12px; color:rgba(43,43,43,0.6);">{{ row.meta }}</p>
+              </div>
+              <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                <sc-for list="{{ row.sizes }}" as="s" hint-placeholder-count="5">
+                  <div style="{{ s.boxStyle }}">
+                    <span style="font-size:11px; color:rgba(43,43,43,0.6);">{{ s.name }}</span>
+                    <div style="display:flex; align-items:center; gap:4px;">
+                      <button onClick="{{ s.dec }}" style="background:none; border:none; padding:0 4px; font-size:14px;">−</button>
+                      <span style="font-size:14px; min-width:14px; text-align:center;">{{ s.stock }}</span>
+                      <button onClick="{{ s.inc }}" style="background:none; border:none; padding:0 4px; font-size:14px;">+</button>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+    </div>
+  </main>
+  </sc-if>
+
+  <sc-if value="{{ sizeGuideOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed; inset:0; z-index:90; background:rgba(43,43,43,0.55); display:flex; align-items:flex-start; justify-content:center; padding:24px; overflow:auto;">
+      <div style="background:#F5F0E8; max-width:720px; width:100%; padding:28px; animation:od-rise 0.25s ease both;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:8px;">
+          <h2 style="margin:0; font-family:'Instrument Serif', serif; font-weight:400; font-size:30px;">Size guide</h2>
+          <button onClick="{{ closeSizeGuide }}" style="background:none; border:none; padding:0; font-size:22px; line-height:1;">×</button>
+        </div>
+        <p style="margin:0 0 22px; font-size:14px; color:rgba(43,43,43,0.72);">Measurements in centimetres, taken flat and doubled. Between two sizes? We usually say size up, or ask us on Instagram.</p>
+        <p style="margin:0 0 10px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#8A9A7B;">Women — UK</p>
+        <div style="overflow-x:auto; margin-bottom:26px;">
+          <table style="width:100%; border-collapse:collapse; font-size:14px; min-width:420px;">
+            <thead><tr>
+              <th style="text-align:left; padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.3); font-weight:600;">UK size</th>
+              <th style="text-align:left; padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.3); font-weight:600;">Bust</th>
+              <th style="text-align:left; padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.3); font-weight:600;">Waist</th>
+              <th style="text-align:left; padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.3); font-weight:600;">Hip</th>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{ womensGuide }}" as="r" hint-placeholder-count="7">
+                <tr>
+                  <td style="padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.1);">{{ r.size }}</td>
+                  <td style="padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.1);">{{ r.bust }}</td>
+                  <td style="padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.1);">{{ r.waist }}</td>
+                  <td style="padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.1);">{{ r.hip }}</td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin:0 0 10px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#8A9A7B;">Men</p>
+        <div style="overflow-x:auto;">
+          <table style="width:100%; border-collapse:collapse; font-size:14px; min-width:420px;">
+            <thead><tr>
+              <th style="text-align:left; padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.3); font-weight:600;">Size</th>
+              <th style="text-align:left; padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.3); font-weight:600;">Chest</th>
+              <th style="text-align:left; padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.3); font-weight:600;">Waist</th>
+              <th style="text-align:left; padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.3); font-weight:600;">Collar</th>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{ mensGuide }}" as="r" hint-placeholder-count="5">
+                <tr>
+                  <td style="padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.1);">{{ r.size }}</td>
+                  <td style="padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.1);">{{ r.chest }}</td>
+                  <td style="padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.1);">{{ r.waist }}</td>
+                  <td style="padding:8px 10px; border-bottom:1px solid rgba(43,43,43,0.1);">{{ r.collar }}</td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <footer style="border-top:1px solid rgba(43,43,43,0.14); margin-top:20px;">
+    <div style="max-width:1180px; margin:0 auto; padding:40px 22px 34px; display:grid; gap:26px; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));">
+      <div>
+        <p style="margin:0 0 8px; font-family:'Instrument Serif', serif; font-size:24px;">Oddment</p>
+        <p style="margin:0; font-size:14px; color:rgba(43,43,43,0.7);">Good things, oddly chosen.<br>12 Weaver's Row, Manchester M4 1AA</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px; font-size:14px;">
+        <button onClick="{{ goShop }}" style="background:none; border:none; padding:0; text-align:left; color:#2B2B2B;">Shop</button>
+        <button onClick="{{ goVisit }}" style="background:none; border:none; padding:0; text-align:left; color:#2B2B2B;">Visit &amp; collect</button>
+        <button onClick="{{ goAbout }}" style="background:none; border:none; padding:0; text-align:left; color:#2B2B2B;">About</button>
+        <button onClick="{{ openSizeGuide }}" style="background:none; border:none; padding:0; text-align:left; color:#2B2B2B;">Size guide</button>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px; font-size:14px;">
+        <a href="#instagram">Message us on Instagram</a>
+        <span style="color:rgba(43,43,43,0.7);">@oddment.mcr</span>
+        <button onClick="{{ goAdmin }}" style="background:none; border:none; padding:0; text-align:left; color:rgba(43,43,43,0.55); font-size:13px;">Staff login</button>
+      </div>
+      <div style="font-size:13px; color:rgba(43,43,43,0.65); line-height:1.7;">
+        <p style="margin:0 0 6px;">Photography via Pexels</p>
+        <p style="margin:0;">Oddment is a fictional concept store designed and built by Sono Technologies.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroVariant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;editorial&quot;,&quot;fullbleed&quot;],&quot;default&quot;:&quot;editorial&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Variations&quot;},&quot;quirkLevel&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;restrained&quot;,&quot;none&quot;],&quot;default&quot;:&quot;restrained&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Variations&quot;},&quot;lowStockThreshold&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:2,&quot;min&quot;:1,&quot;max&quot;:5,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Behaviour&quot;}}">
+const money = (n) => "£" + (Math.round(n * 100) / 100).toFixed(2).replace(/\.00$/, "");
+
+const W = ["6", "8", "10", "12", "14", "16", "18"];
+const M = ["XS", "S", "M", "L", "XL", "XXL"];
+const mk = (sizes, counts) => sizes.map((s, i) => ({ size: s, stock: counts[i] }));
+
+const PRODUCTS = [
+  { id: "cardigan", name: "Northern Wool Cardigan", price: 145, cat: "Women", label: "product shot — oatmeal wool cardigan, plain ground", blurb: "Undyed lambswool from a mill in Huddersfield, knitted in Portugal. Boxy through the body with a slightly dropped shoulder.", note: "Sam's favourite — wears beautifully", sizes: mk(W, [1, 3, 2, 4, 2, 0, 1]) },
+  { id: "overshirt", name: "The Weaver Overshirt", price: 128, cat: "Men", label: "product shot — clay cotton overshirt, front", blurb: "Heavy brushed cotton, patch pockets, corozo buttons. Cut to go over a knit without bunching.", note: "Goes with everything Rob owns", sizes: mk(M, [2, 5, 6, 4, 2, 1]) },
+  { id: "shirtdress", name: "Linen Shirtdress", price: 115, cat: "Women", label: "product shot — sage linen shirtdress on hanger", blurb: "Washed European linen that softens with every wash. Self belt, deep side pockets.", note: "", sizes: mk(W, [2, 2, 1, 3, 3, 2, 0]) },
+  { id: "chore", name: "Corduroy Chore Jacket", price: 165, cat: "Men", label: "product shot — brown needlecord chore jacket", blurb: "Eight-wale cotton cord, unlined, three pockets. The one thing we reorder every autumn.", note: "", sizes: mk(M, [1, 2, 4, 3, 1, 0]) },
+  { id: "crew", name: "Marled Crew Knit", price: 88, cat: "Men", label: "product shot — grey marl crew neck knit, flat lay", blurb: "Lambswool and cotton, mid-weight, ribbed at the cuff. Sits neatly under the overshirt.", note: "", sizes: mk(M, [3, 6, 8, 5, 3, 2]) },
+  { id: "skirt", name: "Bias-Cut Silk Skirt", price: 96, cat: "Women", label: "product shot — ink silk bias skirt, movement", blurb: "Sandwashed silk cut on the bias so it hangs rather than clings. Concealed side zip.", note: "", sizes: mk(W, [2, 1, 2, 2, 1, 1, 0]) },
+  { id: "tee", name: "Cotton Boatneck Tee", price: 42, cat: "Women", label: "product shot — cream boatneck tee, plain ground", blurb: "Heavyweight organic cotton with a wide neckline that keeps its shape. Made in Porto.", note: "", sizes: mk(W, [4, 6, 7, 6, 4, 3, 2]) },
+  { id: "jean", name: "Selvedge Straight Jean", price: 135, cat: "Men", label: "product shot — raw selvedge jean, folded hem", blurb: "13.5oz raw Japanese selvedge, straight through the leg. Free hemming in the shop.", note: "", sizes: mk(M, [2, 3, 5, 4, 2, 1]) },
+  { id: "scarf", name: "Lambswool Scarf, Ochre", price: 38, cat: "Accessories", label: "product shot — ochre lambswool scarf, coiled", blurb: "Woven in Hawick, fringed by hand. The ochre is warmer than it photographs.", note: "The colour is better in person — Nia", sizes: mk(["One size"], [2]) },
+  { id: "belt", name: "Hand-Stitched Leather Belt", price: 52, cat: "Accessories", label: "product shot — tan leather belt, brass buckle", blurb: "Full-grain English bridle leather, solid brass buckle. It will outlast the trousers.", note: "", sizes: mk(["S", "M", "L"], [1, 3, 2]) }
+];
+
+const ORDERS = [
+  { ref: "ODD-4182", customer: "Jo Whitaker", method: "Click & collect", status: "Ready", total: "£145", address: "Collect — 12 Weaver's Row", placed: "Placed today, 09:14", items: [{ name: "Northern Wool Cardigan — 12", price: "£145" }], action: "Mark collected" },
+  { ref: "ODD-4181", customer: "Marcus Bain", method: "Tracked 48", status: "To pack", total: "£216", address: "42 Ardwick Green North, Manchester M12 6FZ", placed: "Placed today, 08:02", items: [{ name: "The Weaver Overshirt — M", price: "£128" }, { name: "Marled Crew Knit — L", price: "£88" }], action: "Mark packed" },
+  { ref: "ODD-4180", customer: "Priya Shah", method: "Click & collect", status: "To pack", total: "£96", address: "Collect — 12 Weaver's Row", placed: "Yesterday, 17:48", items: [{ name: "Bias-Cut Silk Skirt — 10", price: "£96" }], action: "Mark ready" },
+  { ref: "ODD-4179", customer: "Ellie Frost", method: "Tracked 48", status: "Sent", total: "£80", address: "8 Beech Road, Chorlton M21 9EG", placed: "Yesterday, 11:20", items: [{ name: "Cotton Boatneck Tee — 8", price: "£42" }, { name: "Lambswool Scarf, Ochre", price: "£38" }], action: "Mark delivered" },
+  { ref: "ODD-4178", customer: "Tom Ellery", method: "Tracked 48", status: "Sent", total: "£135", address: "19 Tib Street, Manchester M4 1SH", placed: "19 Sep, 15:31", items: [{ name: "Selvedge Straight Jean — 32", price: "£135" }], action: "Mark delivered" }
+];
+
+const WOMENS_GUIDE = [
+  { size: "6", bust: "80", waist: "62", hip: "88" }, { size: "8", bust: "84", waist: "66", hip: "92" },
+  { size: "10", bust: "88", waist: "70", hip: "96" }, { size: "12", bust: "93", waist: "75", hip: "101" },
+  { size: "14", bust: "98", waist: "80", hip: "106" }, { size: "16", bust: "104", waist: "86", hip: "112" },
+  { size: "18", bust: "110", waist: "92", hip: "118" }
+];
+const MENS_GUIDE = [
+  { size: "XS", chest: "89", waist: "76", collar: "37" }, { size: "S", chest: "94", waist: "81", collar: "38" },
+  { size: "M", chest: "99", waist: "86", collar: "40" }, { size: "L", chest: "104", waist: "91", collar: "41" },
+  { size: "XL", chest: "110", waist: "97", collar: "43" }, { size: "XXL", chest: "116", waist: "104", collar: "44" }
+];
+
+class Component extends DCLogic {
+  state = {
+    screen: "home", productId: "cardigan", size: null, bag: [],
+    cat: "All", sizeFilter: null, maxPrice: 200, sort: "new",
+    sizeGuide: false, step: "method", method: "collect", justAdded: false,
+    form: { name: "", email: "", address: "" }, formError: "",
+    orderRef: "", adminTab: "overview", adminOrder: null,
+    stock: PRODUCTS.reduce((acc, p) => { acc[p.id] = p.sizes.map((s) => s.stock); return acc; }, {})
+  };
+
+  go = (screen) => () => { this.setState({ screen, sizeGuide: false }); window.scrollTo(0, 0); };
+
+  openProduct = (id) => () => { this.setState({ screen: "product", productId: id, size: null, justAdded: false }); window.scrollTo(0, 0); };
+
+  stockOf(p) { return this.state.stock[p.id] || p.sizes.map((s) => s.stock); }
+
+  pill(active) {
+    return { background: active ? "#2B2B2B" : "none", color: active ? "#F5F0E8" : "#2B2B2B", border: "1px solid " + (active ? "#2B2B2B" : "rgba(43,43,43,0.24)"), borderRadius: "999px", padding: "7px 14px", fontSize: "13px" };
+  }
+
+  renderVals() {
+    const st = this.state;
+    const chosenHero = this.props.heroVariant ?? "editorial";
+    const quirk = this.props.quirkLevel ?? "restrained";
+    const lowAt = this.props.lowStockThreshold ?? 2;
+
+    const view = (p) => {
+      const counts = this.stockOf(p);
+      const total = counts.reduce((a, b) => a + b, 0);
+      const lowSize = p.sizes.find((s, i) => counts[i] > 0 && counts[i] <= lowAt);
+      const li = lowSize ? p.sizes.indexOf(lowSize) : -1;
+      return {
+        id: p.id, name: p.name, priceText: money(p.price), price: p.price, cat: p.cat, label: p.label,
+        note: quirk === "none" ? "" : p.note, open: this.openProduct(p.id),
+        low: total > 0 && total <= lowAt + 1, lowText: total === 1 ? "Last one" : "Only " + total + " left",
+        lowLine: li >= 0 ? "Only " + counts[li] + " left in size " + p.sizes[li].size : ""
+      };
+    };
+
+    const all = PRODUCTS.map(view);
+    const filtered = PRODUCTS.filter((p) => {
+      if (st.cat !== "All" && p.cat !== st.cat) return false;
+      if (p.price > st.maxPrice) return false;
+      if (st.sizeFilter) {
+        const counts = this.stockOf(p);
+        const i = p.sizes.findIndex((s) => s.size === st.sizeFilter);
+        if (i < 0 || counts[i] === 0) return false;
+      }
+      return true;
+    }).map(view);
+    if (st.sort === "low") filtered.sort((a, b) => a.price - b.price);
+    if (st.sort === "high") filtered.sort((a, b) => b.price - a.price);
+
+    const p = PRODUCTS.find((x) => x.id === st.productId) || PRODUCTS[0];
+    const counts = this.stockOf(p);
+    const sel = st.size;
+    const selIdx = p.sizes.findIndex((s) => s.size === sel);
+    const sizes = p.sizes.map((s, i) => {
+      const out = counts[i] === 0;
+      const active = s.size === sel;
+      return {
+        name: s.size, out, pick: out ? () => {} : () => this.setState({ size: s.size, justAdded: false }),
+        hint: out ? "sold out" : counts[i] <= lowAt ? counts[i] + " left" : "\u00a0",
+        hintColor: out ? "rgba(43,43,43,0.4)" : counts[i] <= lowAt ? "#B5654A" : "rgba(43,43,43,0.45)",
+        style: {
+          display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", minWidth: "58px",
+          padding: "9px 10px", borderRadius: "2px", background: active ? "#2B2B2B" : "#FBF8F2",
+          color: active ? "#F5F0E8" : out ? "rgba(43,43,43,0.4)" : "#2B2B2B",
+          border: "1px solid " + (active ? "#2B2B2B" : "rgba(43,43,43,0.22)"),
+          textDecoration: out ? "line-through" : "none", cursor: out ? "not-allowed" : "pointer"
+        }
+      };
+    });
+
+    const bagLines = st.bag.map((b, idx) => {
+      const bp = PRODUCTS.find((x) => x.id === b.id);
+      return {
+        name: bp.name, size: b.size, qty: b.qty, priceText: money(bp.price),
+        totalText: money(bp.price * b.qty), summary: bp.name + " — " + b.size + " ×" + b.qty,
+        inc: () => this.setState((s) => ({ bag: s.bag.map((l, i) => i === idx ? { ...l, qty: l.qty + 1 } : l) })),
+        dec: () => this.setState((s) => ({ bag: s.bag.map((l, i) => i === idx ? { ...l, qty: Math.max(1, l.qty - 1) } : l) })),
+        remove: () => this.setState((s) => ({ bag: s.bag.filter((_, i) => i !== idx) }))
+      };
+    });
+    const subtotal = st.bag.reduce((a, b) => a + PRODUCTS.find((x) => x.id === b.id).price * b.qty, 0);
+    const deliveryCost = subtotal >= 75 ? 0 : 3.95;
+    const isCollect = st.method === "collect";
+    const orderTotal = subtotal + (isCollect ? 0 : deliveryCost);
+
+    const cardStyle = (active) => ({
+      textAlign: "left", background: active ? "#FBF8F2" : "none", padding: "22px",
+      border: "1px solid " + (active ? "#6B2737" : "rgba(43,43,43,0.2)"),
+      boxShadow: active ? "inset 0 0 0 1px #6B2737" : "none", borderRadius: "2px"
+    });
+
+    const stockRows = PRODUCTS.map((sp) => {
+      const c = this.stockOf(sp);
+      const tot = c.reduce((a, b) => a + b, 0);
+      return {
+        name: sp.name, meta: sp.cat + " · " + money(sp.price) + " · " + tot + " in stock",
+        sizes: sp.sizes.map((s, i) => ({
+          name: s.size, stock: c[i],
+          boxStyle: { display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", padding: "6px 8px", border: "1px solid " + (c[i] === 0 ? "rgba(43,43,43,0.14)" : c[i] <= lowAt ? "#B5654A" : "rgba(43,43,43,0.2)"), background: c[i] === 0 ? "rgba(43,43,43,0.04)" : "#fff", minWidth: "54px" },
+          inc: () => this.bump(sp.id, i, 1), dec: () => this.bump(sp.id, i, -1)
+        }))
+      };
+    });
+
+    const ord = ORDERS.find((o) => o.ref === st.adminOrder) || ORDERS[0];
+
+    return {
+      isHome: st.screen === "home", isShop: st.screen === "shop", isProduct: st.screen === "product",
+      isBag: st.screen === "bag", isCheckout: st.screen === "checkout", isConfirm: st.screen === "confirm",
+      isVisit: st.screen === "visit", isAbout: st.screen === "about", isAdmin: st.screen === "admin",
+      heroEditorial: chosenHero === "editorial", heroFullBleed: chosenHero === "fullbleed",
+
+      goHome: this.go("home"), goShop: this.go("shop"), goVisit: this.go("visit"),
+      goAbout: this.go("about"), goBag: this.go("bag"), goAdmin: this.go("admin"),
+      goCheckout: () => { this.setState({ screen: "checkout", step: "method" }); window.scrollTo(0, 0); },
+      goWomen: () => { this.setState({ screen: "shop", cat: "Women", sizeFilter: null }); window.scrollTo(0, 0); },
+      goMen: () => { this.setState({ screen: "shop", cat: "Men", sizeFilter: null }); window.scrollTo(0, 0); },
+      goAccessories: () => { this.setState({ screen: "shop", cat: "Accessories", sizeFilter: null }); window.scrollTo(0, 0); },
+
+      bagCount: st.bag.reduce((a, b) => a + b.qty, 0),
+      newIn: all.slice(0, 4),
+      staffPicks: all.filter((x) => x.note),
+      categories: [
+        { name: "Women", label: "category shot — womenswear rail", open: () => { this.setState({ screen: "shop", cat: "Women" }); window.scrollTo(0, 0); } },
+        { name: "Men", label: "category shot — menswear rail", open: () => { this.setState({ screen: "shop", cat: "Men" }); window.scrollTo(0, 0); } },
+        { name: "Accessories", label: "category shot — scarves and belts on counter", open: () => { this.setState({ screen: "shop", cat: "Accessories" }); window.scrollTo(0, 0); } }
+      ],
+
+      shopCrumb: st.cat === "All" ? "Everything" : "Shop / " + st.cat,
+      shopTitle: st.cat === "All" ? "New in" : st.cat,
+      resultCount: filtered.length + (filtered.length === 1 ? " piece" : " pieces"),
+      listing: filtered, noResults: filtered.length === 0,
+      catFilters: ["All", "Women", "Men", "Accessories"].map((c) => ({ name: c, pick: () => this.setState({ cat: c }), style: this.pill(st.cat === c) })),
+      sizeFilters: ["6", "8", "10", "12", "14", "16", "18", "XS", "S", "M", "L", "XL", "XXL"].map((s) => ({ name: s, pick: () => this.setState({ sizeFilter: st.sizeFilter === s ? null : s }), style: this.pill(st.sizeFilter === s) })),
+      maxPrice: st.maxPrice, maxPriceText: money(st.maxPrice),
+      setMaxPrice: (e) => this.setState({ maxPrice: Number(e.target.value) }),
+      sort: st.sort, setSort: (e) => this.setState({ sort: e.target.value }),
+      clearFilters: () => this.setState({ cat: "All", sizeFilter: null, maxPrice: 200, sort: "new" }),
+
+      product: {
+        name: p.name, priceText: money(p.price), cat: p.cat, label: p.label, blurb: p.blurb,
+        hasNote: quirk !== "none" && !!p.note, note: p.note, sizes,
+        thumbs: [{ label: "detail — fabric close-up" }, { label: "on model — full length" }, { label: "flat lay — back" }],
+        showLow: selIdx >= 0 && counts[selIdx] > 0 && counts[selIdx] <= lowAt,
+        lowLine: selIdx >= 0 ? "Only " + counts[selIdx] + " left in size " + p.sizes[selIdx].size + " — we won't be getting more" : ""
+      },
+      addLabel: st.justAdded ? "Added to bag ✓" : sel ? "Add to bag" : "Choose a size",
+      addToBag: () => {
+        if (!sel) return;
+        this.setState((s) => {
+          const i = s.bag.findIndex((b) => b.id === p.id && b.size === sel);
+          const bag = i >= 0 ? s.bag.map((b, j) => j === i ? { ...b, qty: b.qty + 1 } : b) : s.bag.concat([{ id: p.id, size: sel, qty: 1 }]);
+          return { bag, justAdded: true };
+        });
+      },
+      openSizeGuide: () => this.setState({ sizeGuide: true }),
+      closeSizeGuide: () => this.setState({ sizeGuide: false }),
+      sizeGuideOpen: st.sizeGuide, womensGuide: WOMENS_GUIDE, mensGuide: MENS_GUIDE,
+
+      bagLines, bagEmpty: st.bag.length === 0, bagHasItems: st.bag.length > 0,
+      subtotalText: money(subtotal), deliveryText: deliveryCost === 0 ? "Free" : money(deliveryCost),
+      bagTotalText: money(subtotal + deliveryCost),
+      deliveryNote: subtotal >= 75 ? "Delivery is free on this order. Collection from the shop is always free." : "Spend " + money(75 - subtotal) + " more for free delivery, or collect free from the shop.",
+
+      atMethod: st.step === "method", atDetails: st.step === "details", atPay: st.step === "pay",
+      step1Color: "#2B2B2B", step2Color: st.step === "method" ? "rgba(43,43,43,0.45)" : "#2B2B2B", step3Color: st.step === "pay" ? "#2B2B2B" : "rgba(43,43,43,0.45)",
+      pickCollect: () => this.setState({ method: "collect" }), pickDelivery: () => this.setState({ method: "delivery" }),
+      collectCardStyle: cardStyle(isCollect), deliveryCardStyle: cardStyle(!isCollect),
+      deliveryPriceLabel: deliveryCost === 0 ? "Free over £75" : money(deliveryCost),
+      methodSummary: isCollect ? "Collecting from 12 Weaver's Row — nothing to pay for postage." : "Delivery " + (deliveryCost === 0 ? "free on this order." : money(deliveryCost) + " added at checkout."),
+      methodLine: isCollect ? "Click & collect" : "Standard delivery",
+      methodCostText: isCollect ? "Free" : deliveryCost === 0 ? "Free" : money(deliveryCost),
+      methodTiming: isCollect ? "Ready today — we'll text when it's on the shelf. Hold for seven days." : "Royal Mail Tracked 48, 2–4 working days.",
+      addressLabel: isCollect ? "Mobile number (for collection text)" : "Delivery address",
+      addressPlaceholder: isCollect ? "07700 900123" : "Street, city, postcode",
+      toMethod: () => this.setState({ step: "method" }),
+      toDetails: () => this.setState({ step: "details", formError: "" }),
+      toPay: () => {
+        const f = this.state.form;
+        if (!f.name || !f.email.includes("@") || !f.address) { this.setState({ formError: "We need a name, a valid email and " + (isCollect ? "a mobile number" : "a delivery address") + " to send the confirmation." }); return; }
+        this.setState({ step: "pay", formError: "" });
+      },
+      placeOrder: () => { this.setState({ screen: "confirm", orderRef: "ODD-" + (4183 + st.bag.length) }); window.scrollTo(0, 0); },
+      form: st.form, setName: (e) => this.setForm("name", e.target.value), setEmail: (e) => this.setForm("email", e.target.value), setAddress: (e) => this.setForm("address", e.target.value),
+      formError: !!st.formError, formErrorText: st.formError,
+      orderTotalText: money(orderTotal), orderRef: st.orderRef,
+      confirmAddress: isCollect ? "12 Weaver's Row, Northern Quarter, M4 1AA" : st.form.address,
+
+      adminTabs: [
+        { name: "Overview", pick: () => this.setState({ adminTab: "overview" }), style: this.pill(st.adminTab === "overview") },
+        { name: "Orders", pick: () => this.setState({ adminTab: "order", adminOrder: st.adminOrder || ORDERS[0].ref }), style: this.pill(st.adminTab === "order") },
+        { name: "Stock", pick: () => this.setState({ adminTab: "stock" }), style: this.pill(st.adminTab === "stock") }
+      ],
+      adminOverview: st.adminTab === "overview", adminOrderView: st.adminTab === "order", adminStock: st.adminTab === "stock",
+      adminStats: [
+        { label: "Orders today", value: "3", sub: "2 to pack" },
+        { label: "Taken today", value: "£457", sub: "online only" },
+        { label: "Awaiting collection", value: "1", sub: "ODD-4182, ready" },
+        { label: "Low stock lines", value: "7", sub: "two or fewer" }
+      ],
+      orders: ORDERS.map((o) => ({ ...o, open: () => this.setState({ adminTab: "order", adminOrder: o.ref }), statusColor: o.status === "Ready" ? "#8A9A7B" : o.status === "To pack" ? "#B5654A" : "rgba(43,43,43,0.5)" })),
+      order: ord, backToOverview: () => this.setState({ adminTab: "overview" }), markReady: () => this.setState({ adminTab: "overview" }),
+      stockRows
+    };
+  }
+
+  setForm(k, v) { this.setState((s) => ({ form: { ...s.form, [k]: v } })); }
+
+  bump(id, i, d) {
+    this.setState((s) => {
+      const next = { ...s.stock };
+      const arr = next[id].slice();
+      arr[i] = Math.max(0, arr[i] + d);
+      next[id] = arr;
+      return { stock: next };
+    });
+  }
+}
+
+</script>
+</body>
+</html>
