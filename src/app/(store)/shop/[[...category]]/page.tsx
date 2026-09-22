@@ -87,7 +87,8 @@ export default async function ShopPage({
         </Suspense>
 
         <div className="min-w-0">
-          <div className="mb-4 flex justify-end">
+          {/* On mobile the sort control sits next to the filters toggle. */}
+          <div className="mb-4 hidden justify-end md:flex">
             <Suspense fallback={null}>
               <SortSelect />
             </Suspense>

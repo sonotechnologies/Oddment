@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { Photo } from "@/components/Photo";
+import {
+  type GallerySlot,
+  ProductGallery,
+} from "@/components/ProductGallery";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { SizeGuideModalButton } from "@/components/SizeGuide";
 import { productImages } from "@/lib/images";
@@ -33,6 +36,25 @@ export default async function ProductPage({ params }: ProductPageProps) {
   if (!product) notFound();
 
   const images = productImages(product.slug);
+
+  // Real photography when the fetch script has run, otherwise labelled
+  // placeholders describing the shot that belongs in each slot.
+  const slots: GallerySlot[] =
+    images.length > 0
+      ? images.map((image, index) => ({
+          image,
+          label:
+            index === 0
+              ? `product shot — ${product.imageQuery}`
+              : `${product.name} — view ${index + 1}`,
+        }))
+      : [
+          { image: null, label: `product shot — ${product.imageQuery}` },
+          { image: null, label: "detail — fabric close-up" },
+          { image: null, label: "on model — full length" },
+          { image: null, label: "flat lay — back" },
+        ];
+
   const category = CATEGORY_LABELS[product.category];
   const categoryHref = `/shop/${category.toLowerCase()}`;
   const singleSize =
@@ -48,33 +70,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </Link>
 
       <div className="grid gap-10 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
-        <div>
-          <Photo
-            image={images[0] ?? null}
-            label={`product shot — ${product.imageQuery}`}
-            className="aspect-[4/5] border border-rule"
-            sizes="(max-width: 768px) 100vw, 560px"
-            priority
-          />
-          <div className="mt-2.5 grid grid-cols-3 gap-2.5">
-            {[1, 2, 3].map((index) => (
-              <Photo
-                key={index}
-                image={images[index] ?? null}
-                label={
-                  index === 1
-                    ? "detail — fabric close-up"
-                    : index === 2
-                      ? "on model — full length"
-                      : "flat lay — back"
-                }
-                className="aspect-square border border-rule"
-                sizes="180px"
-                variant="deep"
-              />
-            ))}
-          </div>
-        </div>
+        <ProductGallery slots={slots} productName={product.name} />
 
         <div className="min-w-0">
           <p className="mb-2 text-[11px] uppercase tracking-[0.2em] text-sage">
