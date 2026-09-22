@@ -1,5 +1,1065 @@
 {
-  "generatedAt": null,
-  "products": {},
-  "lifestyle": []
+  "generatedAt": "2026-09-21T14:01:10.363Z",
+  "products": {
+    "linen-wrap-dress": [
+      {
+        "src": "/products/linen-wrap-dress/1-8053672.jpg",
+        "width": 4480,
+        "height": 6720,
+        "alt": "Close-up of a woman in an orange wrap dress, elegantly posing indoors with a minimalistic backdrop.",
+        "photographer": "Thirdman",
+        "photographerUrl": "https://www.pexels.com/@thirdman",
+        "pexelsUrl": "https://www.pexels.com/photo/person-wearing-orange-dress-8053672/"
+      },
+      {
+        "src": "/products/linen-wrap-dress/2-7901232.jpg",
+        "width": 3895,
+        "height": 5842,
+        "alt": "A woman in a bathrobe sipping tea in a minimalist room, embracing a serene morning.",
+        "photographer": "Ivan S",
+        "photographerUrl": "https://www.pexels.com/@ivan-s",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-in-gray-bathrobe-standing-with-drink-7901232/"
+      },
+      {
+        "src": "/products/linen-wrap-dress/3-7901229.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "Woman in a bathrobe with arms crossed, ready for a calm morning routine.",
+        "photographer": "Ivan S",
+        "photographerUrl": "https://www.pexels.com/@ivan-s",
+        "pexelsUrl": "https://www.pexels.com/photo/a-woman-in-a-bathrobe-7901229/"
+      }
+    ],
+    "ribbed-knit-midi-dress": [
+      {
+        "src": "/products/ribbed-knit-midi-dress/1-34447154.jpg",
+        "width": 4160,
+        "height": 6240,
+        "alt": "Close-up of a woman in a pink ribbed sweater dress with soft lighting.",
+        "photographer": "Alena Evseenko",
+        "photographerUrl": "https://www.pexels.com/@alena-evseenko-660538512",
+        "pexelsUrl": "https://www.pexels.com/photo/fashionable-woman-in-pink-ribbed-sweater-dress-34447154/"
+      },
+      {
+        "src": "/products/ribbed-knit-midi-dress/2-31702653.jpg",
+        "width": 3767,
+        "height": 5651,
+        "alt": "Model poses gracefully in a pink ribbed dress, embracing natural light outdoors.",
+        "photographer": "Ander Masó (Lord Ander M)",
+        "photographerUrl": "https://www.pexels.com/@ander-maso-lord-ander-m-2147531762",
+        "pexelsUrl": "https://www.pexels.com/photo/elegant-woman-posing-in-pink-dress-outdoors-31702653/"
+      },
+      {
+        "src": "/products/ribbed-knit-midi-dress/3-32924602.jpg",
+        "width": 3588,
+        "height": 5382,
+        "alt": "Stylish adult woman in a ribbed brown dress poses confidently against a warm background.",
+        "photographer": "Mayara Caroline  Mombelli",
+        "photographerUrl": "https://www.pexels.com/@mayaramombellifotografias",
+        "pexelsUrl": "https://www.pexels.com/photo/elegant-woman-in-ribbed-brown-dress-posing-32924602/"
+      }
+    ],
+    "chunky-cable-cardigan": [
+      {
+        "src": "/products/chunky-cable-cardigan/1-5845789.jpg",
+        "width": 4160,
+        "height": 6240,
+        "alt": "Black and white portrait of a woman in cozy knitwear enjoying a stroll in an autumn park.",
+        "photographer": "Anastasiya Gepp",
+        "photographerUrl": "https://www.pexels.com/@anastasiya-gepp-654466",
+        "pexelsUrl": "https://www.pexels.com/photo/grayscale-photo-of-woman-in-knit-sweater-5845789/"
+      },
+      {
+        "src": "/products/chunky-cable-cardigan/2-18851701.jpg",
+        "width": 4435,
+        "height": 6653,
+        "alt": "Stylish woman posing in a lace dress and knit cardigan outdoors.",
+        "photographer": "Ahmed ؜",
+        "photographerUrl": "https://www.pexels.com/@mutecevvil",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-posing-in-white-lace-bustier-dress-and-beige-knit-cardigan-18851701/"
+      },
+      {
+        "src": "/products/chunky-cable-cardigan/3-38273436.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "A close-up shot of a woman in a floral dress and cardigan enjoying a sunny day outdoors.",
+        "photographer": "Alexander Mass",
+        "photographerUrl": "https://www.pexels.com/@rebornfilmes",
+        "pexelsUrl": "https://www.pexels.com/photo/close-up-of-woman-in-floral-dress-outdoors-38273436/"
+      }
+    ],
+    "merino-crew-jumper": [
+      {
+        "src": "/products/merino-crew-jumper/1-6995884.jpg",
+        "width": 4160,
+        "height": 6240,
+        "alt": "Young shy female hiding face behind warm sweater against gray background and looking at camera",
+        "photographer": "Alena Shekhovtcova",
+        "photographerUrl": "https://www.pexels.com/@alena-shekhovtcova",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-covering-face-with-turtleneck-in-studio-6995884/"
+      },
+      {
+        "src": "/products/merino-crew-jumper/2-30479364.jpg",
+        "width": 8742,
+        "height": 11656,
+        "alt": "A woman in a gray sweater confidently poses on a wooden ladder against a neutral background.",
+        "photographer": "Augusto Carneiro Junior",
+        "photographerUrl": "https://www.pexels.com/@augustocarneirojr",
+        "pexelsUrl": "https://www.pexels.com/photo/confident-woman-posing-on-wooden-ladder-30479364/"
+      },
+      {
+        "src": "/products/merino-crew-jumper/3-17859075.jpg",
+        "width": 4672,
+        "height": 7008,
+        "alt": "Woman in Icelandic wool sweater smiling by a scenic waterfall in Akureyri, Iceland.",
+        "photographer": "Erica On The Go",
+        "photographerUrl": "https://www.pexels.com/@ericaonthego",
+        "pexelsUrl": "https://www.pexels.com/photo/a-woman-smiling-in-front-of-a-waterfall-17859075/"
+      }
+    ],
+    "oversized-cotton-shirt": [
+      {
+        "src": "/products/oversized-cotton-shirt/1-34299100.jpg",
+        "width": 4000,
+        "height": 5334,
+        "alt": "Elegant portrait of a woman wearing an oversized white shirt, captured indoors.",
+        "photographer": "Kold Shots",
+        "photographerUrl": "https://www.pexels.com/@kold-shots-61080370",
+        "pexelsUrl": "https://www.pexels.com/photo/stylish-portrait-of-woman-in-white-shirt-34299100/"
+      },
+      {
+        "src": "/products/oversized-cotton-shirt/2-14615199.jpg",
+        "width": 3680,
+        "height": 4347,
+        "alt": "Black and white portrait of a woman standing in front of a Ladezone door.",
+        "photographer": "Hamit Ferhat",
+        "photographerUrl": "https://www.pexels.com/@hefehe",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-standing-near-door-in-black-and-white-14615199/"
+      },
+      {
+        "src": "/products/oversized-cotton-shirt/3-7945666.jpg",
+        "width": 3456,
+        "height": 5184,
+        "alt": "Positive female model wearing oversize white shirt and beige trousers shooting on gray screen in studio",
+        "photographer": "Карина  Каржавина",
+        "photographerUrl": "https://www.pexels.com/@28488111",
+        "pexelsUrl": "https://www.pexels.com/photo/young-woman-hugging-herself-in-studio-7945666/"
+      }
+    ],
+    "printed-blouse": [
+      {
+        "src": "/products/printed-blouse/1-14945336.jpg",
+        "width": 3456,
+        "height": 5184,
+        "alt": "Stylish woman in Ankara in a leopard pattern blouse outdoors.",
+        "photographer": "Oz Art",
+        "photographerUrl": "https://www.pexels.com/@oz-art-266259698",
+        "pexelsUrl": "https://www.pexels.com/photo/brunette-wearing-patterned-blouse-14945336/"
+      },
+      {
+        "src": "/products/printed-blouse/2-17822264.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "Elegant portrait of a woman in a patterned blouse with artistic lighting.",
+        "photographer": "Gisele  Seidel",
+        "photographerUrl": "https://www.pexels.com/@gisele-seidel-170981851",
+        "pexelsUrl": "https://www.pexels.com/photo/portrait-of-a-brunette-woman-17822264/"
+      },
+      {
+        "src": "/products/printed-blouse/3-17381503.jpg",
+        "width": 3648,
+        "height": 5472,
+        "alt": "Stylish woman sitting on a floral sofa on a balcony, smiling at dusk.",
+        "photographer": "Sandro  Tavares",
+        "photographerUrl": "https://www.pexels.com/@sandro-tavares-260503371",
+        "pexelsUrl": "https://www.pexels.com/photo/young-woman-sitting-on-a-sofa-17381503/"
+      }
+    ],
+    "wide-leg-tailored-trousers": [
+      {
+        "src": "/products/wide-leg-tailored-trousers/1-31400265.jpg",
+        "width": 3482,
+        "height": 5222,
+        "alt": "Chic woman in beige trousers and hat posing confidently on a white background.",
+        "photographer": "sara kazemi",
+        "photographerUrl": "https://www.pexels.com/@sara-kazemi-2148049458",
+        "pexelsUrl": "https://www.pexels.com/photo/fashionable-woman-posing-in-stylish-beige-outfit-31400265/"
+      },
+      {
+        "src": "/products/wide-leg-tailored-trousers/2-18532851.jpg",
+        "width": 3240,
+        "height": 4854,
+        "alt": "Stylish woman posing in studio with oversized shirt and wide-leg pants.",
+        "photographer": "Mauricio Casas",
+        "photographerUrl": "https://www.pexels.com/@mauricio-casas-454804780",
+        "pexelsUrl": "https://www.pexels.com/photo/young-fashionable-woman-posing-in-studio-18532851/"
+      },
+      {
+        "src": "/products/wide-leg-tailored-trousers/3-39457509.jpg",
+        "width": 4480,
+        "height": 6720,
+        "alt": "Fashion photo of floral patterned wide-leg trousers on white background.",
+        "photographer": "Engin Akyurt",
+        "photographerUrl": "https://www.pexels.com/@enginakyurt",
+        "pexelsUrl": "https://www.pexels.com/photo/floral-wide-leg-trousers-fashion-photography-39457509/"
+      }
+    ],
+    "straight-leg-cord-trousers": [
+      {
+        "src": "/products/straight-leg-cord-trousers/1-7716960.jpg",
+        "width": 4157,
+        "height": 6235,
+        "alt": "Two people hold green corduroy pants against a matching background.",
+        "photographer": "cottonbro studio",
+        "photographerUrl": "https://www.pexels.com/@cottonbro",
+        "pexelsUrl": "https://www.pexels.com/photo/hands-holding-cord-pants-7716960/"
+      },
+      {
+        "src": "/products/straight-leg-cord-trousers/2-30486965.jpg",
+        "width": 3024,
+        "height": 4032,
+        "alt": "A stylish outdoor fashion shot featuring maroon corduroy pants and rugged black boots.",
+        "photographer": "Mouad Streetsnaps",
+        "photographerUrl": "https://www.pexels.com/@mouad-streetsnaps-2147971138",
+        "pexelsUrl": "https://www.pexels.com/photo/casual-outdoor-fashion-with-maroon-pants-and-black-boots-30486965/"
+      },
+      {
+        "src": "/products/straight-leg-cord-trousers/3-6724088.jpg",
+        "width": 3971,
+        "height": 5957,
+        "alt": "A young woman in a corduroy outfit striking a creative pose on a chair in a minimalist setting.",
+        "photographer": "cottonbro studio",
+        "photographerUrl": "https://www.pexels.com/@cottonbro",
+        "pexelsUrl": "https://www.pexels.com/photo/a-girl-in-a-corduroy-outfit-on-a-chair-6724088/"
+      }
+    ],
+    "wool-blend-longline-coat": [
+      {
+        "src": "/products/wool-blend-longline-coat/1-19169233.jpg",
+        "width": 4160,
+        "height": 6240,
+        "alt": "Fashionable woman in a trench coat and boots descending city stairs, showcasing autumn street style.",
+        "photographer": "Mâide Arslan",
+        "photographerUrl": "https://www.pexels.com/@maide-arslan-128712163",
+        "pexelsUrl": "https://www.pexels.com/photo/person-walking-down-stairs-in-tan-colored-coat-19169233/"
+      },
+      {
+        "src": "/products/wool-blend-longline-coat/2-35114789.jpg",
+        "width": 2832,
+        "height": 4256,
+        "alt": "Stylish woman in a gray coat walking outside a chic boutique.",
+        "photographer": "Thang Nguyen",
+        "photographerUrl": "https://www.pexels.com/@chipi1189",
+        "pexelsUrl": "https://www.pexels.com/photo/elegant-woman-in-winter-fashion-coat-outdoors-35114789/"
+      },
+      {
+        "src": "/products/wool-blend-longline-coat/3-19354455.jpg",
+        "width": 3758,
+        "height": 5636,
+        "alt": "A fashionable woman adjusting her black coat over a white knit sweater indoors.",
+        "photographer": "Berna",
+        "photographerUrl": "https://www.pexels.com/@mibernaa",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-wearing-coat-and-white-sweater-19354455/"
+      }
+    ],
+    "quilted-liner-jacket": [
+      {
+        "src": "/products/quilted-liner-jacket/1-19270535.jpg",
+        "width": 4465,
+        "height": 6698,
+        "alt": "Stylish woman in a white jacket walking on a city sidewalk during twilight.",
+        "photographer": "Konstantin Mishchenko",
+        "photographerUrl": "https://www.pexels.com/@aksioart",
+        "pexelsUrl": "https://www.pexels.com/photo/casual-style-teenager-in-white-jacket-19270535/"
+      },
+      {
+        "src": "/products/quilted-liner-jacket/2-19094380.jpg",
+        "width": 4444,
+        "height": 6666,
+        "alt": "Side view of a woman in a warm quilted jacket walking through a field of tall grass.",
+        "photographer": "Esma Atak",
+        "photographerUrl": "https://www.pexels.com/@esma-atak-46104031",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-in-a-white-jacket-among-high-grass-19094380/"
+      },
+      {
+        "src": "/products/quilted-liner-jacket/3-6765179.jpg",
+        "width": 4160,
+        "height": 6240,
+        "alt": "Close-up shot of a blue denim patchwork jacket worn by a woman.",
+        "photographer": "cottonbro studio",
+        "photographerUrl": "https://www.pexels.com/@cottonbro",
+        "pexelsUrl": "https://www.pexels.com/photo/close-up-photo-of-a-denim-jacket-6765179/"
+      }
+    ],
+    "boxy-striped-tee": [
+      {
+        "src": "/products/boxy-striped-tee/1-2876793.jpg",
+        "width": 3456,
+        "height": 5184,
+        "alt": "Young woman wearing a striped shirt standing outdoors, looking away under a clear blue sky.",
+        "photographer": "João Paulo de Souza Oliveira",
+        "photographerUrl": "https://www.pexels.com/@joaoattitude",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-wearing-white-and-black-striped-crew-neck-t-shirt-2876793/"
+      },
+      {
+        "src": "/products/boxy-striped-tee/2-17637723.jpg",
+        "width": 4403,
+        "height": 6604,
+        "alt": "A young woman in a striped t-shirt holds a camera in a summer countryside setting.",
+        "photographer": "Ahmed ؜",
+        "photographerUrl": "https://www.pexels.com/@mutecevvil",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-with-camera-in-countryside-17637723/"
+      },
+      {
+        "src": "/products/boxy-striped-tee/3-7791104.jpg",
+        "width": 4099,
+        "height": 6149,
+        "alt": "A woman capturing her healthy breakfast with a smartphone in a stylish, bright kitchen.",
+        "photographer": "Ron Lach",
+        "photographerUrl": "https://www.pexels.com/@ron-lach",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-in-white-t-shirt-taking-photo-of-her-breakfast-on-black-table-with-kitchen-striped-towel-7791104/"
+      }
+    ],
+    "pleated-midi-skirt": [
+      {
+        "src": "/products/pleated-midi-skirt/1-4690501.jpg",
+        "width": 5255,
+        "height": 7882,
+        "alt": "Fashionable woman posing in a studio with a printed blouse and pleated white skirt.",
+        "photographer": "Konstantin Mishchenko",
+        "photographerUrl": "https://www.pexels.com/@aksioart",
+        "pexelsUrl": "https://www.pexels.com/photo/model-in-a-pleated-white-midi-skirt-and-a-blouse-with-a-navy-blue-print-4690501/"
+      },
+      {
+        "src": "/products/pleated-midi-skirt/2-4271569.jpg",
+        "width": 3823,
+        "height": 5735,
+        "alt": "A fashionable look featuring black sneakers and a pleated skirt photographed from above.",
+        "photographer": "alleksana",
+        "photographerUrl": "https://www.pexels.com/@alleksana",
+        "pexelsUrl": "https://www.pexels.com/photo/a-person-wearing-a-converse-sneakers-and-accordion-skirt-4271569/"
+      },
+      {
+        "src": "/products/pleated-midi-skirt/3-19871704.jpg",
+        "width": 6094,
+        "height": 7912,
+        "alt": "Young woman in denim jacket and pleated skirt poses outdoors at night. Stylish fashion photography.",
+        "photographer": "Conrad Nevins",
+        "photographerUrl": "https://www.pexels.com/@conrad-nevins-288920954",
+        "pexelsUrl": "https://www.pexels.com/photo/brunette-in-denim-jacket-and-long-skirt-19871704/"
+      }
+    ],
+    "oxford-button-down-shirt": [
+      {
+        "src": "/products/oxford-button-down-shirt/1-12871418.jpg",
+        "width": 5304,
+        "height": 7952,
+        "alt": "A man in a striped shirt stands among lush green leaves, bathed in natural light.",
+        "photographer": "Skildring by Andreas Ellegaard",
+        "photographerUrl": "https://www.pexels.com/@skildring",
+        "pexelsUrl": "https://www.pexels.com/photo/man-in-gray-dress-shirt-standing-near-green-banana-tree-12871418/"
+      },
+      {
+        "src": "/products/oxford-button-down-shirt/2-34769548.jpg",
+        "width": 4016,
+        "height": 6016,
+        "alt": "Portrait of a confident young man wearing formal attire, standing against a plain gray background.",
+        "photographer": "Taiye Salawu",
+        "photographerUrl": "https://www.pexels.com/@taiyesalawu",
+        "pexelsUrl": "https://www.pexels.com/photo/confident-young-man-in-formal-attire-portrait-34769548/"
+      },
+      {
+        "src": "/products/oxford-button-down-shirt/3-18351092.jpg",
+        "width": 3105,
+        "height": 4658,
+        "alt": "Elegantly dressed man in olive suit with red tie and headphones, posing indoors.",
+        "photographer": "Ali  Drabo",
+        "photographerUrl": "https://www.pexels.com/@ali-drabo-10956272",
+        "pexelsUrl": "https://www.pexels.com/photo/model-in-an-elegant-olive-suit-with-a-red-tie-and-headphones-adjusting-the-cuff-18351092/"
+      }
+    ],
+    "heavyweight-overshirt": [
+      {
+        "src": "/products/heavyweight-overshirt/1-31696312.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "Stylish man wearing jacket and sunglasses poses in front of a bright orange shutter adding a modern urban vibe.",
+        "photographer": "Murat IŞIK",
+        "photographerUrl": "https://www.pexels.com/@bymuratisikofficial",
+        "pexelsUrl": "https://www.pexels.com/photo/fashionable-man-poses-against-vibrant-orange-background-31696312/"
+      },
+      {
+        "src": "/products/heavyweight-overshirt/2-16964407.jpg",
+        "width": 3456,
+        "height": 5184,
+        "alt": "Fashionable man posing with casual attire and accessories against a red brick wall.",
+        "photographer": "Bruce Taylor",
+        "photographerUrl": "https://www.pexels.com/@bruce-taylor-322737340",
+        "pexelsUrl": "https://www.pexels.com/photo/model-in-jacket-flat-hat-holding-bag-16964407/"
+      },
+      {
+        "src": "/products/heavyweight-overshirt/3-18864127.jpg",
+        "width": 4160,
+        "height": 6240,
+        "alt": "Handsome man wearing a fedora and plaid overshirt, illuminated by dramatic shadows.",
+        "photographer": "C'Pho Ngondo R.Rouge",
+        "photographerUrl": "https://www.pexels.com/@royalrouge",
+        "pexelsUrl": "https://www.pexels.com/photo/man-in-hat-and-check-overshirt-18864127/"
+      }
+    ],
+    "lambswool-crew-jumper": [
+      {
+        "src": "/products/lambswool-crew-jumper/1-36510866.jpg",
+        "width": 4006,
+        "height": 6009,
+        "alt": "Fashion-forward young man in casual outfit leaning against a textured wall.",
+        "photographer": "Mert Coşkun",
+        "photographerUrl": "https://www.pexels.com/@mertcoskunraw",
+        "pexelsUrl": "https://www.pexels.com/photo/young-man-in-stylish-casual-sweater-and-jeans-36510866/"
+      },
+      {
+        "src": "/products/lambswool-crew-jumper/2-10447586.jpg",
+        "width": 6336,
+        "height": 9504,
+        "alt": "Stylish portrait of a bearded man with long hair, wearing a warm sweater against a bright backdrop.",
+        "photographer": "Syed Qaarif Andrabi",
+        "photographerUrl": "https://www.pexels.com/@qaarif",
+        "pexelsUrl": "https://www.pexels.com/photo/a-bearded-man-with-long-hair-10447586/"
+      },
+      {
+        "src": "/products/lambswool-crew-jumper/3-19587995.jpg",
+        "width": 3840,
+        "height": 5760,
+        "alt": "A man with a husky on a walk through a snowy winter forest scene.",
+        "photographer": "iddea photo",
+        "photographerUrl": "https://www.pexels.com/@alena",
+        "pexelsUrl": "https://www.pexels.com/photo/man-with-a-dog-in-a-forest-in-winter-19587995/"
+      }
+    ],
+    "fisherman-roll-neck": [
+      {
+        "src": "/products/fisherman-roll-neck/1-6478246.jpg",
+        "width": 4480,
+        "height": 6720,
+        "alt": "A young man wearing a green beanie and winter jacket, focusing on preparing a fishing rod.",
+        "photographer": "https://kaboompics.com/",
+        "photographerUrl": "https://www.pexels.com/@karola-g",
+        "pexelsUrl": "https://www.pexels.com/photo/man-in-beige-jacket-holding-fishing-rod-6478246/"
+      },
+      {
+        "src": "/products/fisherman-roll-neck/2-8918089.jpg",
+        "width": 4480,
+        "height": 6720,
+        "alt": "Elderly man enjoys fishing on a sailboat during a serene sunset by the water.",
+        "photographer": "Yaroslav Shuraev",
+        "photographerUrl": "https://www.pexels.com/@yaroslav-shuraev",
+        "pexelsUrl": "https://www.pexels.com/photo/photo-of-a-man-fishing-8918089/"
+      },
+      {
+        "src": "/products/fisherman-roll-neck/3-8916851.jpg",
+        "width": 4480,
+        "height": 6720,
+        "alt": "Elderly man enjoying a leisure fishing activity on a dock next to a sailboat in a serene setting.",
+        "photographer": "Yaroslav Shuraev",
+        "photographerUrl": "https://www.pexels.com/@yaroslav-shuraev",
+        "pexelsUrl": "https://www.pexels.com/photo/elderly-man-standing-on-the-dock-with-a-fishing-rod-8916851/"
+      }
+    ],
+    "relaxed-chinos": [
+      {
+        "src": "/products/relaxed-chinos/1-31692229.jpg",
+        "width": 4000,
+        "height": 5705,
+        "alt": "Casually dressed man in urban setting, sitting on stone steps, showcasing city lifestyle.",
+        "photographer": "Kari Alfonso",
+        "photographerUrl": "https://www.pexels.com/@kari-alfonso-2151442665",
+        "pexelsUrl": "https://www.pexels.com/photo/man-relaxing-on-urban-street-staircase-31692229/"
+      },
+      {
+        "src": "/products/relaxed-chinos/2-16594456.jpg",
+        "width": 3840,
+        "height": 4800,
+        "alt": "Fashionable man in red attire posing on white background. Studio shoot.",
+        "photographer": "Abdullah Shahid",
+        "photographerUrl": "https://www.pexels.com/@abdullah-shahid-449379376",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-posing-in-monochromatic-clothing-16594456/"
+      },
+      {
+        "src": "/products/relaxed-chinos/3-8350481.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "A bearded man in casual attire stands confidently on sunny desert sands.",
+        "photographer": "Mikhail Nilov",
+        "photographerUrl": "https://www.pexels.com/@mikhail-nilov",
+        "pexelsUrl": "https://www.pexels.com/photo/handsome-man-wearing-white-long-sleeve-polo-8350481/"
+      }
+    ],
+    "wide-cord-trousers": [
+      {
+        "src": "/products/wide-cord-trousers/1-30486965.jpg",
+        "width": 3024,
+        "height": 4032,
+        "alt": "A stylish outdoor fashion shot featuring maroon corduroy pants and rugged black boots.",
+        "photographer": "Mouad Streetsnaps",
+        "photographerUrl": "https://www.pexels.com/@mouad-streetsnaps-2147971138",
+        "pexelsUrl": "https://www.pexels.com/photo/casual-outdoor-fashion-with-maroon-pants-and-black-boots-30486965/"
+      },
+      {
+        "src": "/products/wide-cord-trousers/2-7716960.jpg",
+        "width": 4157,
+        "height": 6235,
+        "alt": "Two people hold green corduroy pants against a matching background.",
+        "photographer": "cottonbro studio",
+        "photographerUrl": "https://www.pexels.com/@cottonbro",
+        "pexelsUrl": "https://www.pexels.com/photo/hands-holding-cord-pants-7716960/"
+      },
+      {
+        "src": "/products/wide-cord-trousers/3-32251301.jpg",
+        "width": 3517,
+        "height": 4396,
+        "alt": "A man in a corduroy outfit stands by the coast, gazing at the ocean under a blue sky.",
+        "photographer": "Aj Collins  Artistry",
+        "photographerUrl": "https://www.pexels.com/@aj-collins-artistry-1772576281",
+        "pexelsUrl": "https://www.pexels.com/photo/man-in-corduroy-outfit-admiring-ocean-view-32251301/"
+      }
+    ],
+    "waxed-cotton-jacket": [
+      {
+        "src": "/products/waxed-cotton-jacket/1-19807390.jpg",
+        "width": 6336,
+        "height": 9504,
+        "alt": "Portrait of a bearded man in a jacket standing outdoors with hands in pockets.",
+        "photographer": "Çağrı Beşli",
+        "photographerUrl": "https://www.pexels.com/@cagri-besli-387362595",
+        "pexelsUrl": "https://www.pexels.com/photo/portrait-of-a-man-in-a-black-jacket-19807390/"
+      },
+      {
+        "src": "/products/waxed-cotton-jacket/2-19094669.jpg",
+        "width": 7037,
+        "height": 9504,
+        "alt": "Dramatic portrait of a man in a leather jacket seated in Baghdad, Iraq.",
+        "photographer": "khezez  | خزاز",
+        "photographerUrl": "https://www.pexels.com/@khezez",
+        "pexelsUrl": "https://www.pexels.com/photo/man-in-leather-jacket-sitting-on-armchair-with-wax-candles-behind-19094669/"
+      },
+      {
+        "src": "/products/waxed-cotton-jacket/3-17555649.jpg",
+        "width": 4672,
+        "height": 7008,
+        "alt": "Silhouette of a young man standing in a field at sunset, creating a dramatic and moody atmosphere.",
+        "photographer": "Katia Miasoed",
+        "photographerUrl": "https://www.pexels.com/@katia-miasoed-624959709",
+        "pexelsUrl": "https://www.pexels.com/photo/male-model-posing-outdoors-at-sunset-17555649/"
+      }
+    ],
+    "chore-jacket": [
+      {
+        "src": "/products/chore-jacket/1-38700002.jpg",
+        "width": 4640,
+        "height": 6960,
+        "alt": "Close-up of a durable workwear jacket showcasing craftsmanship and rugged style.",
+        "photographer": "Daniel & Hannah Snipes",
+        "photographerUrl": "https://www.pexels.com/@prolificpeople",
+        "pexelsUrl": "https://www.pexels.com/photo/heritage-workwear-close-up-38700002/"
+      },
+      {
+        "src": "/products/chore-jacket/2-38700001.jpg",
+        "width": 4640,
+        "height": 6960,
+        "alt": "Explore the rugged charm of classic outdoor fashion with this detailed portrait in natural light.",
+        "photographer": "Daniel & Hannah Snipes",
+        "photographerUrl": "https://www.pexels.com/@prolificpeople",
+        "pexelsUrl": "https://www.pexels.com/photo/rugged-outdoor-workwear-fashion-portrait-38700001/"
+      },
+      {
+        "src": "/products/chore-jacket/3-4483692.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "Man wearing a blue beanie and gloves, standing against a wall, portraying a focused expression.",
+        "photographer": "Tiger Lily",
+        "photographerUrl": "https://www.pexels.com/@tiger-lily",
+        "pexelsUrl": "https://www.pexels.com/photo/a-man-wearing-blue-beanie-4483692/"
+      }
+    ],
+    "heavyweight-pocket-tee": [
+      {
+        "src": "/products/heavyweight-pocket-tee/1-7597490.jpg",
+        "width": 3925,
+        "height": 4462,
+        "alt": "Portrait of a confident man smiling in a white t-shirt on a plain background.",
+        "photographer": "Alexandru Molnar",
+        "photographerUrl": "https://www.pexels.com/@alexandru-molnar-2777514",
+        "pexelsUrl": "https://www.pexels.com/photo/man-in-white-shirt-with-hand-on-his-waist-7597490/"
+      },
+      {
+        "src": "/products/heavyweight-pocket-tee/2-17858295.jpg",
+        "width": 2971,
+        "height": 4451,
+        "alt": "Studio shot of a man standing in a white t-shirt and jeans against a plain background.",
+        "photographer": "Estefania Milazzo",
+        "photographerUrl": "https://www.pexels.com/@estefania-milazzo-436474929",
+        "pexelsUrl": "https://www.pexels.com/photo/standing-man-in-jeans-and-white-t-shirt-17858295/"
+      },
+      {
+        "src": "/products/heavyweight-pocket-tee/3-8217461.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "A confident man with a beard poses in a white t-shirt against a white background, exuding modern simplicity.",
+        "photographer": "MART  PRODUCTION",
+        "photographerUrl": "https://www.pexels.com/@mart-production",
+        "pexelsUrl": "https://www.pexels.com/photo/man-in-white-crew-neck-shirt-and-wristwatch-8217461/"
+      }
+    ],
+    "striped-breton-top": [
+      {
+        "src": "/products/striped-breton-top/1-23669190.jpg",
+        "width": 4912,
+        "height": 7360,
+        "alt": "Fashion portrait of a woman in a striped top with arms raised against a white background.",
+        "photographer": "Andrea Musto",
+        "photographerUrl": "https://www.pexels.com/@andrea-musto-135941147",
+        "pexelsUrl": "https://www.pexels.com/photo/sitting-woman-in-striped-skirt-23669190/"
+      },
+      {
+        "src": "/products/striped-breton-top/2-32442105.jpg",
+        "width": 4160,
+        "height": 6240,
+        "alt": "Smiling young woman posing outdoors in casual attire, surrounded by vibrant flowers and greenery.",
+        "photographer": "Evoking  Ephemerality",
+        "photographerUrl": "https://www.pexels.com/@evoking-ephemerality-222334091",
+        "pexelsUrl": "https://www.pexels.com/photo/young-woman-in-striped-top-outdoors-with-flowers-32442105/"
+      },
+      {
+        "src": "/products/striped-breton-top/3-11788012.jpg",
+        "width": 3024,
+        "height": 4032,
+        "alt": "Detailed view of a person revealing layered striped shirts with contrasting patterns.",
+        "photographer": "Ruslan Rozanov",
+        "photographerUrl": "https://www.pexels.com/@ruslan-rozanov-174297693",
+        "pexelsUrl": "https://www.pexels.com/photo/photograph-of-a-person-taking-off-a-striped-shirt-11788012/"
+      }
+    ],
+    "knitted-polo": [
+      {
+        "src": "/products/knitted-polo/1-9814509.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "A woman in a brown skirt adjusts her waistband while standing on a stone pavement.",
+        "photographer": "chickenbunny",
+        "photographerUrl": "https://www.pexels.com/@chickenbunny-102941452",
+        "pexelsUrl": "https://www.pexels.com/photo/a-girl-in-brown-top-and-skirt-9814509/"
+      },
+      {
+        "src": "/products/knitted-polo/2-20632485.jpg",
+        "width": 3200,
+        "height": 4800,
+        "alt": "Portrait of a man in Lagos wearing a fashionable hat and polo shirt.",
+        "photographer": "Ben Iwara",
+        "photographerUrl": "https://www.pexels.com/@ben-iwara-1033992193",
+        "pexelsUrl": "https://www.pexels.com/photo/portrait-of-man-in-hat-20632485/"
+      },
+      {
+        "src": "/products/knitted-polo/3-38010898.jpg",
+        "width": 4000,
+        "height": 5487,
+        "alt": "A man in a navy blue polo shirt stands confidently by an ornate black door with intricate designs.",
+        "photographer": "Yusif Iskandarov",
+        "photographerUrl": "https://www.pexels.com/@yusif-iskandarov-2160750281",
+        "pexelsUrl": "https://www.pexels.com/photo/man-in-blue-polo-shirt-standing-by-ornate-door-38010898/"
+      }
+    ],
+    "harrington-jacket": [
+      {
+        "src": "/products/harrington-jacket/1-20252245.jpg",
+        "width": 3510,
+        "height": 6240,
+        "alt": "Close-up of a couple holding hands while walking in a city scene, wearing jackets.",
+        "photographer": "Joaquin Carfagna",
+        "photographerUrl": "https://www.pexels.com/@joaquin-carfagna-3131171",
+        "pexelsUrl": "https://www.pexels.com/photo/couple-in-jackets-holding-hands-and-walking-20252245/"
+      },
+      {
+        "src": "/products/harrington-jacket/2-14694449.jpg",
+        "width": 4000,
+        "height": 5428,
+        "alt": "Person in a brown jacket stands overlooking a scenic mountain view.",
+        "photographer": "Martí Bertran",
+        "photographerUrl": "https://www.pexels.com/@marti-bertran-386435747",
+        "pexelsUrl": "https://www.pexels.com/photo/back-view-of-a-person-wearing-brown-jacket-14694449/"
+      },
+      {
+        "src": "/products/harrington-jacket/3-30580482.jpg",
+        "width": 3857,
+        "height": 4821,
+        "alt": "Three friends enjoy a fun moment together, wearing bright and cozy winter jackets in a playful setting.",
+        "photographer": "Bjorn Pierre",
+        "photographerUrl": "https://www.pexels.com/@bjorn-pierre-2147988187",
+        "pexelsUrl": "https://www.pexels.com/photo/group-of-friends-smiling-in-casual-winter-wear-30580482/"
+      }
+    ],
+    "leather-crossbody-bag": [
+      {
+        "src": "/products/leather-crossbody-bag/1-12442673.jpg",
+        "width": 3512,
+        "height": 6240,
+        "alt": "A classic leather bag with a vintage look showcased on a vibrant orange background.",
+        "photographer": "Bilakis",
+        "photographerUrl": "https://www.pexels.com/@bilakis",
+        "pexelsUrl": "https://www.pexels.com/photo/leather-bag-on-orange-studio-background-12442673/"
+      },
+      {
+        "src": "/products/leather-crossbody-bag/2-22432981.jpg",
+        "width": 3508,
+        "height": 4961,
+        "alt": "Minimalist studio shoot of brown and black leather bags on a white background.",
+        "photographer": "Muneeb Malhotra",
+        "photographerUrl": "https://www.pexels.com/@dhanno",
+        "pexelsUrl": "https://www.pexels.com/photo/bags-on-white-background-22432981/"
+      },
+      {
+        "src": "/products/leather-crossbody-bag/3-27292673.jpg",
+        "width": 4672,
+        "height": 7008,
+        "alt": "Stylish woman in white attire holding a premium leather crossbody bag, showcasing luxury fashion.",
+        "photographer": "Gül Işık",
+        "photographerUrl": "https://www.pexels.com/@ekrulila",
+        "pexelsUrl": "https://www.pexels.com/photo/the-leather-satchel-bag-is-made-from-a-brown-leather-27292673/"
+      }
+    ],
+    "canvas-tote": [
+      {
+        "src": "/products/canvas-tote/1-17836626.jpg",
+        "width": 3648,
+        "height": 5472,
+        "alt": "A person holding a tote bag handle next to a glass of iced coffee.",
+        "photographer": "Doğu Tuncer",
+        "photographerUrl": "https://www.pexels.com/@dogu-tuncer-339534179",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-using-fabric-shopper-bag-17836626/"
+      },
+      {
+        "src": "/products/canvas-tote/2-19245662.jpg",
+        "width": 3712,
+        "height": 5568,
+        "alt": "Canvas tote bag resting against snowy tree trunk in a winter forest setting.",
+        "photographer": "Darya Grey_Owl",
+        "photographerUrl": "https://www.pexels.com/@darya-grey_owl-132130036",
+        "pexelsUrl": "https://www.pexels.com/photo/a-fabric-bag-lying-on-the-ground-in-snow-19245662/"
+      },
+      {
+        "src": "/products/canvas-tote/3-19245736.jpg",
+        "width": 3712,
+        "height": 5568,
+        "alt": "Eco-friendly canvas tote bag leaning against snow-covered tree trunks in winter forest.",
+        "photographer": "Darya Grey_Owl",
+        "photographerUrl": "https://www.pexels.com/@darya-grey_owl-132130036",
+        "pexelsUrl": "https://www.pexels.com/photo/canvas-shopping-bag-of-the-ikikiz-online-shop-in-the-snow-between-tree-trunks-19245736/"
+      }
+    ],
+    "lambswool-scarf": [
+      {
+        "src": "/products/lambswool-scarf/1-19510922.jpg",
+        "width": 3525,
+        "height": 5288,
+        "alt": "Three women in vibrant scarves embrace in a snowy forest, showcasing winter fashion and friendship.",
+        "photographer": "Danik Prihodko",
+        "photographerUrl": "https://www.pexels.com/@danikprihodko",
+        "pexelsUrl": "https://www.pexels.com/photo/beautiful-women-in-coats-posing-in-forest-19510922/"
+      },
+      {
+        "src": "/products/lambswool-scarf/2-9563714.jpg",
+        "width": 3429,
+        "height": 5143,
+        "alt": "Blonde woman in a vibrant scarf smiles outdoors in a snowy winter scene.",
+        "photographer": "Алексей Вечерин",
+        "photographerUrl": "https://www.pexels.com/@107014568",
+        "pexelsUrl": "https://www.pexels.com/photo/a-smiling-woman-wrapped-in-red-scarf-9563714/"
+      },
+      {
+        "src": "/products/lambswool-scarf/3-30876144.jpg",
+        "width": 4672,
+        "height": 7008,
+        "alt": "A cheerful woman in a hijab enjoying a snowy forest scene in winter.",
+        "photographer": "Şeyhmus Kino",
+        "photographerUrl": "https://www.pexels.com/@seyhmuskino",
+        "pexelsUrl": "https://www.pexels.com/photo/smiling-woman-enjoying-snowy-winter-forest-30876144/"
+      }
+    ],
+    "rib-beanie": [
+      {
+        "src": "/products/rib-beanie/1-37484033.jpg",
+        "width": 4123,
+        "height": 6184,
+        "alt": "Black and grey knitted winter hats placed on a wooden surface with decorative wooden balls.",
+        "photographer": "Lee Hanson",
+        "photographerUrl": "https://www.pexels.com/@lee-hanson-2161337044",
+        "pexelsUrl": "https://www.pexels.com/photo/cozy-knitted-winter-hats-on-wooden-surface-37484033/"
+      },
+      {
+        "src": "/products/rib-beanie/2-6386211.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "Side view of a woman in a red beanie sitting outside on a snowy day.",
+        "photographer": "Тамара Левченко",
+        "photographerUrl": "https://www.pexels.com/@levchenko",
+        "pexelsUrl": "https://www.pexels.com/photo/woman-in-red-knit-cap-6386211/"
+      },
+      {
+        "src": "/products/rib-beanie/3-15490507.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "Portrait of a woman adjusting her knit hat, exuding casual and stylish vibes.",
+        "photographer": "Summer",
+        "photographerUrl": "https://www.pexels.com/@summer-419902836",
+        "pexelsUrl": "https://www.pexels.com/photo/portrait-of-a-woman-wearing-a-knit-hat-15490507/"
+      }
+    ],
+    "cotton-bucket-hat": [
+      {
+        "src": "/products/cotton-bucket-hat/1-27896979.jpg",
+        "width": 4603,
+        "height": 6904,
+        "alt": "Stylish man in avocado print shirt enjoying a sunny day outdoors wearing a bucket hat.",
+        "photographer": "Kenneth Surillo",
+        "photographerUrl": "https://www.pexels.com/@kenzero14",
+        "pexelsUrl": "https://www.pexels.com/photo/a-man-in-a-yellow-shirt-with-avocado-on-it-27896979/"
+      },
+      {
+        "src": "/products/cotton-bucket-hat/2-6962046.jpg",
+        "width": 3264,
+        "height": 4896,
+        "alt": "Profile portrait of a young woman wearing a white bucket hat and light blue shirt outdoors",
+        "photographer": "Champ Nitirak",
+        "photographerUrl": "https://www.pexels.com/@champ-nitirak-31297108",
+        "pexelsUrl": "https://www.pexels.com/photo/a-woman-wearing-a-white-bucket-hat-6962046/"
+      },
+      {
+        "src": "/products/cotton-bucket-hat/3-15968645.jpg",
+        "width": 2753,
+        "height": 4894,
+        "alt": "Fashionable woman in casual attire, wearing eyeglasses and a hat, poses confidently outdoors.",
+        "photographer": "Omotaiyewoo",
+        "photographerUrl": "https://www.pexels.com/@omotaiyewoo-317252750",
+        "pexelsUrl": "https://www.pexels.com/photo/model-posing-in-hat-and-jeans-15968645/"
+      }
+    ],
+    "gold-tone-hoop-earrings": [
+      {
+        "src": "/products/gold-tone-hoop-earrings/1-12452943.jpg",
+        "width": 3456,
+        "height": 5184,
+        "alt": "Close-up of gold hoop earrings nestled among delicate lilac flowers, showcasing elegance and nature.",
+        "photographer": "Ioana Motoc",
+        "photographerUrl": "https://www.pexels.com/@ioanamtc",
+        "pexelsUrl": "https://www.pexels.com/photo/gold-hoop-earrings-on-flowers-12452943/"
+      },
+      {
+        "src": "/products/gold-tone-hoop-earrings/2-15785528.jpg",
+        "width": 4672,
+        "height": 7008,
+        "alt": "Elegant gold hoop earrings on a woman's ear with a focus on minimalist design and style.",
+        "photographer": "COPPERTIST WU",
+        "photographerUrl": "https://www.pexels.com/@coppertist-wu-313365563",
+        "pexelsUrl": "https://www.pexels.com/photo/brunette-woman-wearing-gold-earrings-15785528/"
+      },
+      {
+        "src": "/products/gold-tone-hoop-earrings/3-11456370.jpg",
+        "width": 3803,
+        "height": 5071,
+        "alt": "Close-up of a woman showcasing a stylish gold hoop earring with elegant wavy hair.",
+        "photographer": "Created Stories",
+        "photographerUrl": "https://www.pexels.com/@createdstories",
+        "pexelsUrl": "https://www.pexels.com/photo/a-woman-with-wavy-hair-wearing-gold-earring-11456370/"
+      }
+    ],
+    "fine-chain-necklace": [
+      {
+        "src": "/products/fine-chain-necklace/1-7679824.jpg",
+        "width": 3667,
+        "height": 5500,
+        "alt": "Close-up of gold chains hanging on a jewelry display rack, showcasing elegant design.",
+        "photographer": "MART  PRODUCTION",
+        "photographerUrl": "https://www.pexels.com/@mart-production",
+        "pexelsUrl": "https://www.pexels.com/photo/close-up-photograph-of-gold-necklaces-hanging-from-a-rack-7679824/"
+      },
+      {
+        "src": "/products/fine-chain-necklace/2-14355033.jpg",
+        "width": 4016,
+        "height": 6016,
+        "alt": "A close-up shot of layered gold necklaces on a woman, featuring a 'Goddess' pendant.",
+        "photographer": "meekBASE",
+        "photographerUrl": "https://www.pexels.com/@meekbase-351053001",
+        "pexelsUrl": "https://www.pexels.com/photo/necklace-on-a-woman-neck-14355033/"
+      },
+      {
+        "src": "/products/fine-chain-necklace/3-7407107.jpg",
+        "width": 4160,
+        "height": 6240,
+        "alt": "Chic fashion close-up featuring diverse chain necklaces and bold lipstick, perfect for style inspiration.",
+        "photographer": "cottonbro studio",
+        "photographerUrl": "https://www.pexels.com/@cottonbro",
+        "pexelsUrl": "https://www.pexels.com/photo/close-up-shot-of-a-woman-wearing-chain-necklaces-7407107/"
+      }
+    ],
+    "leather-belt": [
+      {
+        "src": "/products/leather-belt/1-37483619.jpg",
+        "width": 3800,
+        "height": 5492,
+        "alt": "Senior man in a warm jacket at an outdoor market stall with leather belts.",
+        "photographer": "khaled damlakhi",
+        "photographerUrl": "https://www.pexels.com/@khaled-damlakhi-337914115",
+        "pexelsUrl": "https://www.pexels.com/photo/elderly-man-at-a-belt-market-stall-37483619/"
+      },
+      {
+        "src": "/products/leather-belt/2-33495913.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "Craftsman creating leather goods at a workshop. Focus on craftsmanship and traditional methods.",
+        "photographer": "Abdelilah Hibat Allah",
+        "photographerUrl": "https://www.pexels.com/@abdelilah-hibat-allah-1652683667",
+        "pexelsUrl": "https://www.pexels.com/photo/skilled-artisan-working-with-leather-in-workshop-33495913/"
+      },
+      {
+        "src": "/products/leather-belt/3-27790607.jpg",
+        "width": 4000,
+        "height": 6000,
+        "alt": "A close-up shot of a man adjusting his leather belt with visible jewelry and an unbuttoned shirt.",
+        "photographer": "Галина Ласаева",
+        "photographerUrl": "https://www.pexels.com/@20710970",
+        "pexelsUrl": "https://www.pexels.com/photo/man-holding-leather-belt-27790607/"
+      }
+    ],
+    "silk-neck-scarf": [
+      {
+        "src": "/products/silk-neck-scarf/1-3204622.jpg",
+        "width": 3648,
+        "height": 5472,
+        "alt": "Close-up of an elegant woman wearing a vibrant red silk scarf and white top.",
+        "photographer": "Bella Zhong",
+        "photographerUrl": "https://www.pexels.com/@bellazhong",
+        "pexelsUrl": "https://www.pexels.com/photo/photo-of-woman-wearing-pink-silk-bandana-3204622/"
+      },
+      {
+        "src": "/products/silk-neck-scarf/2-30992409.jpg",
+        "width": 4672,
+        "height": 7008,
+        "alt": "A close-up image of a person wearing a floral neck scarf and hijab, showcasing fashion details.",
+        "photographer": "Sueda Dilli",
+        "photographerUrl": "https://www.pexels.com/@suedadilli",
+        "pexelsUrl": "https://www.pexels.com/photo/close-up-of-stylish-neck-scarf-and-hijab-30992409/"
+      },
+      {
+        "src": "/products/silk-neck-scarf/3-9157878.jpg",
+        "width": 4000,
+        "height": 5333,
+        "alt": "Close-up portrait of a person with a scarf and yellow blazer against an orange background.",
+        "photographer": "cottonbro studio",
+        "photographerUrl": "https://www.pexels.com/@cottonbro",
+        "pexelsUrl": "https://www.pexels.com/photo/a-woman-in-yellow-blazer-wearing-a-gray-scarf-9157878/"
+      }
+    ],
+    "leather-card-holder": [
+      {
+        "src": "/products/leather-card-holder/1-27467355.jpg",
+        "width": 4672,
+        "height": 7008,
+        "alt": "Minimalist leather card holder on pink background with decorative elements.",
+        "photographer": "Gül Işık",
+        "photographerUrl": "https://www.pexels.com/@ekrulila",
+        "pexelsUrl": "https://www.pexels.com/photo/brand-leather-wallet-in-pink-background-27467355/"
+      },
+      {
+        "src": "/products/leather-card-holder/2-10634549.jpg",
+        "width": 3770,
+        "height": 5160,
+        "alt": "Elegant close-up of hands holding a handcrafted leather card holder.",
+        "photographer": "pratik prasad",
+        "photographerUrl": "https://www.pexels.com/@pratik-prasad-3736245",
+        "pexelsUrl": "https://www.pexels.com/photo/person-holding-a-leather-card-holder-10634549/"
+      },
+      {
+        "src": "/products/leather-card-holder/3-37326710.jpg",
+        "width": 4672,
+        "height": 7008,
+        "alt": "Collection of brown leather cardholders arranged artistically on a white background.",
+        "photographer": "Gül Işık",
+        "photographerUrl": "https://www.pexels.com/@ekrulila",
+        "pexelsUrl": "https://www.pexels.com/photo/minimalist-orange-leather-cardholders-on-display-37326710/"
+      }
+    ]
+  },
+  "lifestyle": [
+    {
+      "src": "/lifestyle/8386651.jpg",
+      "width": 5689,
+      "height": 3793,
+      "alt": "Bright and airy boutique featuring pastel garments and a lush green plant centerpiece.",
+      "photographer": "Ron Lach",
+      "photographerUrl": "https://www.pexels.com/@ron-lach",
+      "pexelsUrl": "https://www.pexels.com/photo/green-plant-inside-a-store-8386651/"
+    },
+    {
+      "src": "/lifestyle/39147652.jpg",
+      "width": 7694,
+      "height": 5132,
+      "alt": "Warmly lit flower shop entrance adorned with various plants and decorations at night.",
+      "photographer": "c cx",
+      "photographerUrl": "https://www.pexels.com/@c-cx-2163727054",
+      "pexelsUrl": "https://www.pexels.com/photo/cozy-flower-shop-exterior-at-night-39147652/"
+    },
+    {
+      "src": "/lifestyle/6567353.jpg",
+      "width": 4526,
+      "height": 3017,
+      "alt": "Happy young lady with long dark hair in stylish clothes smiling while walking on city street with paper bags in hand after shopping",
+      "photographer": "Tim Douglas",
+      "photographerUrl": "https://www.pexels.com/@tim-douglas",
+      "pexelsUrl": "https://www.pexels.com/photo/confident-young-female-shopper-strolling-on-city-street-with-gift-bags-6567353/"
+    },
+    {
+      "src": "/lifestyle/1488470.jpg",
+      "width": 5472,
+      "height": 3648,
+      "alt": "A variety of colorful jackets hanging on a clothes rack in a stylish store.",
+      "photographer": "Edgars Kisuro",
+      "photographerUrl": "https://www.pexels.com/@kish",
+      "pexelsUrl": "https://www.pexels.com/photo/photo-of-women-s-clothes-1488470/"
+    },
+    {
+      "src": "/lifestyle/15105621.jpg",
+      "width": 5965,
+      "height": 3357,
+      "alt": "Warm ambiance in a modern café with stylish neon peace sign lighting.",
+      "photographer": "Namzy",
+      "photographerUrl": "https://www.pexels.com/@namzy-419907319",
+      "pexelsUrl": "https://www.pexels.com/photo/furniture-in-bar-15105621/"
+    },
+    {
+      "src": "/lifestyle/1884581.jpg",
+      "width": 6720,
+      "height": 4480,
+      "alt": "Neatly folded clothing and shoes displayed on shelves in a boutique setting.",
+      "photographer": "Tembela Bohle",
+      "photographerUrl": "https://www.pexels.com/@bohlemedia",
+      "pexelsUrl": "https://www.pexels.com/photo/grayscale-photography-of-assorted-apparels-on-shelf-rack-1884581/"
+    },
+    {
+      "src": "/lifestyle/31744678.jpg",
+      "width": 5666,
+      "height": 3778,
+      "alt": "A cozy evening view of a lit shopfront in Shaftesbury, England, showcasing the charm of a nighttime street.",
+      "photographer": "Kristian  Thomas",
+      "photographerUrl": "https://www.pexels.com/@sp7photography",
+      "pexelsUrl": "https://www.pexels.com/photo/charming-night-scene-of-shopfront-in-shaftesbury-31744678/"
+    },
+    {
+      "src": "/lifestyle/6958455.jpg",
+      "width": 6720,
+      "height": 4480,
+      "alt": "A person unboxes a small item from a cardboard package filled with crinkle paper, indoors.",
+      "photographer": "https://kaboompics.com/",
+      "photographerUrl": "https://www.pexels.com/@karola-g",
+      "pexelsUrl": "https://www.pexels.com/photo/man-unpacking-a-package-6958455/"
+    }
+  ]
 }
